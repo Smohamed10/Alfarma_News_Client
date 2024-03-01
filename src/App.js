@@ -2,12 +2,19 @@ import { Outlet } from 'react-router-dom';
 import './App.css';
 import Header from './Shared/Header';
 import Footer from './Shared/Footer';
+
+
+import"./css/bootstrap.css" ;
+import"./css/font-awesome.min.css"; 
+import"./css/responsive.css"; 
+import"./css/colors.css";
+
 function App() {
   return (
-    <div className="App">
-    <Header/>
-    <Outlet/>
-    <Footer/>
+    <div id="wrapper">
+        <Header/>
+        <Outlet/>
+        <Footer/>
     </div>
   );
 }
