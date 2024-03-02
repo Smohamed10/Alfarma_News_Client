@@ -48,13 +48,18 @@ const Header = () => {
             </div>
         </div>
 
-        <div class="header-section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="logo">
-                            <a href="index.html"><img src={logo_vid} alt="vbn"/></a>
-                        </div>
+        <div className="header-section">
+            <div className="container">
+                <div className="row">
+                    <div className="col-md-12">
+                    <div className="logo" style={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
+    <a href="index.html">
+        <video autoPlay loop muted playsInline style={{ maxWidth: '200px', maxHeight: '200px' }}>
+            <source src={logo_vid} type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+    </a>
+</div>
                     </div>
                 </div>
             </div>
