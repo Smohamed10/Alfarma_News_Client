@@ -148,7 +148,10 @@ a {
   text-transform: capitalize;
   color: #121212;
 }
-
+.nav-item
+{
+  color: white;
+}
 .dropdown-toggle::after {
   display: inline-block;
   width: auto;
@@ -1643,7 +1646,6 @@ hr.invis3 {
 .loader {
   display: block;
   margin: 20px auto 0;
-  vertical-align: middle;
 }
 
 #preloader {

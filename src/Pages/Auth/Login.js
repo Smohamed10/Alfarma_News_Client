@@ -1,46 +1,54 @@
 import React from 'react';
+	//import icon from"./images/icons/favicon.ico";
+	import "./vendor/bootstrap/css/bootstrap.min.css";
+	import "./fonts/font-awesome-4.7.0/css/font-awesome.min.css";
+	import "./fonts/iconic/css/material-design-iconic-font.min.css";
+	import "./vendor/animate/animate.css";
+	import "./vendor/css-hamburgers/hamburgers.min.css";
+	import "./vendor/animsition/css/animsition.min.css";
+	import "./vendor/select2/select2.min.css";
+	import "./vendor/daterangepicker/daterangepicker.css";
+	import "./css/util.css";
+	import "./css/main.css";
+    import logo from "../../images/footer_logo.png";
 
 const Login = () => {
     return (
-        <div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100">
-				<form class="login100-form validate-form">
-					<span class="login100-form-title p-b-26">
-						Welcome
+        <div className="limiter">
+		<div className="container-login100">
+			<div className="wrap-login100">
+				<form className="login100-form validate-form">
+					<span className="login100-form-title">
+                    <img src={logo} alt="" className="img-fluid" style={{width: '200px', height: '200px'}}/>
 					</span>
-					<span class="login100-form-title p-b-48">
-						<i class="zmdi zmdi-font"></i>
-					</span>
-
-					<div class="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
-						<input class="input100" type="text" name="email"/>
-						<span class="focus-input100" data-placeholder="Email"></span>
+					<div className="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
+						<input className="input100" type="text" name="email"/>
+						<span className="focus-input100" data-placeholder="Email"></span>
 					</div>
 
-					<div class="wrap-input100 validate-input" data-validate="Enter password">
-						<span class="btn-show-pass">
-							<i class="zmdi zmdi-eye"></i>
+					<div className="wrap-input100 validate-input" data-validate="Enter password">
+						<span className="btn-show-pass">
+							<i className="zmdi zmdi-eye"></i>
 						</span>
-						<input class="input100" type="password" name="pass"/>
-						<span class="focus-input100" data-placeholder="Password"></span>
+						<input className="input100" type="password" name="pass"/>
+						<span className="focus-input100" data-placeholder="Password"></span>
 					</div>
 
-					<div class="container-login100-form-btn">
-						<div class="wrap-login100-form-btn">
-							<div class="login100-form-bgbtn"></div>
-							<button class="login100-form-btn">
+					<div className="container-login100-form-btn">
+						<div className="wrap-login100-form-btn">
+							<div className="login100-form-bgbtn"></div>
+							<button className="login100-form-btn">
 								Login
 							</button>
 						</div>
 					</div>
 
-					<div class="text-center p-t-115">
-						<span class="txt1">
+					<div className="text-center p-t-115">
+						<span className="txt1">
 							Don't have an account?
 						</span>
-
-						<a class="txt2" href=" ">
+                        <br/>
+						<a className="txt2" href="/register">
 							Sign Up
 						</a>
 					</div>

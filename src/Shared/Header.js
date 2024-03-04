@@ -68,8 +68,8 @@ const Header = () => {
 
         <header className="header">
             <div className="container">
-                <nav className="navbar navbar-inverse navbar-toggleable-md">
-                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#cloapediamenu" aria-controls="cloapediamenu" aria-expanded="false" aria-label="Toggle navigation">
+                <nav className="navbar navbar-inverse navbar-toggleable-md" >
+                <button className="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#cloapediamenu" aria-controls="cloapediamenu" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse justify-content-md-center" id="cloapediamenu">
