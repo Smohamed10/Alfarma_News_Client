@@ -136,7 +136,8 @@ a {
 .header {
   padding: 0.4rem 0;
   position: relative;
-  background-color: #000000;
+  background-color: #027081;
+
 }
 
 .navbar-inverse .navbar-nav .nav-link,
@@ -171,7 +172,7 @@ a {
 
 .header-section {
   /*padding: 3rem 0 1.5rem;*/
-  background-color: #ffffff;
+  background: url(images/4394251_91649-removebg-preview.png) repeat-x   #ffffff;
 }
 
 .logo img {

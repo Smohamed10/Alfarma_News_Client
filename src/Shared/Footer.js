@@ -21,7 +21,7 @@ const Footer = () => {
 
                                     <a href="single.html" className="list-group-item list-group-item-action flex-column align-items-start">
                                         <div className="w-100 justify-content-between">
-                                            <img src="../upload/blog_square_02.jpg" alt="" className="img-fluid float-left"/>
+                                            <img src={blog_square_01} alt="" className="img-fluid float-left"/>
                                             <h5 className="mb-1">Let's make an introduction for creative life</h5>
                                             <small>11 Jan, 2016</small>
                                         </div>
@@ -29,7 +29,7 @@ const Footer = () => {
 
                                     <a href="single.html" className="list-group-item list-group-item-action flex-column align-items-start">
                                         <div className="w-100 last-item justify-content-between">
-                                            <img src="../upload/blog_square_03.jpg" alt="" className="img-fluid float-left"/>
+                                            <img src={blog_square_01} alt="" className="img-fluid float-left"/>
                                             <h5 className="mb-1">Did you see the most beautiful sea in the world?</h5>
                                             <small>07 Jan, 2016</small>
                                         </div>
@@ -46,7 +46,7 @@ const Footer = () => {
                                 <div className="list-group">
                                     <a href="single.html" className="list-group-item list-group-item-action flex-column align-items-start">
                                         <div className="w-100 justify-content-between">
-                                            <img src="../upload/blog_square_04.jpg" alt="" className="img-fluid float-left"/>
+                                            <img src={blog_square_01} alt="" className="img-fluid float-left"/>
                                             <h5 className="mb-1">Banana-chip chocolate cake recipe with customs</h5>
                                             <span className="rating">
                                                 <i className="fa fa-star"></i>
@@ -60,7 +60,7 @@ const Footer = () => {
 
                                     <a href="single.html" className="list-group-item list-group-item-action flex-column align-items-start">
                                         <div className="w-100 justify-content-between">
-                                            <img src="../upload/blog_square_07.jpg" alt="" className="img-fluid float-left"/>
+                                            <img src={blog_square_01} alt="" className="img-fluid float-left"/>
                                             <h5 className="mb-1">10 practical ways to choose organic vegetables</h5>
                                             <span className="rating">
                                                 <i className="fa fa-star"></i>
@@ -74,7 +74,7 @@ const Footer = () => {
 
                                     <a href="single.html" className="list-group-item list-group-item-action flex-column align-items-start">
                                         <div className="w-100 last-item justify-content-between">
-                                            <img src="../upload/blog_square_06.jpg" alt="" className="img-fluid float-left"/>
+                                            <img src={blog_square_01} alt="" className="img-fluid float-left"/>
                                             <h5 className="mb-1">We are making homemade ravioli, nice and good</h5>
                                             <span className="rating">
                                                 <i className="fa fa-star"></i>

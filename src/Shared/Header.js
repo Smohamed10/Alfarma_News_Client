@@ -33,8 +33,8 @@ const Header = () => {
                         <div className="topmenu text-center">
                             <ul className="list-inline">
                                 <li className="list-inline-item"><a href="blog-category-01.html"><i className="fa fa-star"></i> Trends</a></li>
-                                <li className="list-inline-item"><a href="blog-category-02.html"><i className="fa fa-bolt"></i> Hot Topics</a></li>
-                                <li className="list-inline-item"><a href="page-contact.html"><i className="fa fa-user-circle-o"></i> Write for us</a></li>
+                                <li className="list-inline-item"><a href="blog-category-02.html"><i className="fa fa-bolt"></i> الأكثر رواجا</a></li>
+                                <li className="list-inline-item"><a href="page-contact.html"><i className="fa fa-user-circle-o"></i> تواصل معنا</a></li>
                             </ul>
                         </div>
                     </div>
@@ -74,20 +74,19 @@ const Header = () => {
                     </button>
                     <div className="collapse navbar-collapse justify-content-md-center" id="cloapediamenu">
                         <ul className="navbar-nav">
-                            <li className="nav-item">
-                                <a className="nav-link color-pink-hover" href="index.html">Home</a>
-                            </li>
+
                             <li className="nav-item dropdown has-submenu menu-large hidden-md-down hidden-sm-down hidden-xs-down">
-                                <a className="nav-link dropdown-toggle" href=" " id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Categories</a>
+                                <a className="nav-link dropdown-toggle" href=" " id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">بترول</a>
                                 <ul className="dropdown-menu megamenu" aria-labelledby="dropdown01">
                                     <li>
                                         <div className="mega-menu-content clearfix">
                                             <div className="tab">
-                                                <button className="tablinks active" onClick="openCategory(event, 'cat01')">Beauty</button>
-                                                <button className="tablinks" onClick="openCategory(event, 'cat02')">Fashion</button>
-                                                <button className="tablinks" onClick="openCategory(event, 'cat03')">Travel</button>
-                                                <button className="tablinks" onClick="openCategory(event, 'cat04')">Architecture</button>
-                                                <button className="tablinks" onClick="openCategory(event, 'cat05')">Recipes</button>
+                                                <button className="tablinks active" onClick="openCategory(event, 'cat01')">صحة</button>
+                                                <button className="tablinks" onClick="openCategory(event, 'cat02')">تعليم</button>
+                                                <button className="tablinks" onClick="openCategory(event, 'cat03')">فن</button>
+                                                <button className="tablinks" onClick="openCategory(event, 'cat04')">رياضه</button>
+                                                <button className="tablinks" onClick="openCategory(event, 'cat05')">اقتصاد</button>
+                                                <button className="tablinks" onClick="openCategory(event, 'cat05')">بترول</button>
                                             </div>
 
                                             <div className="tab-details clearfix">
@@ -432,7 +431,7 @@ const Header = () => {
                                 </ul>
                             </li>
                             <li className="nav-item dropdown has-submenu">
-                                <a className="nav-link dropdown-toggle" href=" " id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Features</a>
+                                <a className="nav-link dropdown-toggle" href=" " id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">اقتصاد</a>
                                 <ul className="dropdown-menu" aria-labelledby="dropdown02">
                                     <li><a className="dropdown-item" href="single.html">Single Blog <span className="hidden-md-down hidden-sm-down hidden-xs-down"><i className="fa fa-angle-right"></i></span></a>
                                         <ul className="dropdown-menu">
@@ -463,22 +462,19 @@ const Header = () => {
                                 </ul>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link color-pink-hover" href="blog-category-01.html">Fashion</a>
+                                <a className="nav-link color-pink-hover" href="blog-category-01.html">رياضه</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link color-red-hover" href="blog-category-02.html">Food</a>
+                                <a className="nav-link color-red-hover" href="blog-category-02.html">فن</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link color-aqua-hover" href="blog-category-03.html">Lifestyle</a>
+                                <a className="nav-link color-aqua-hover" href="blog-category-03.html">تعليم</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link color-green-hover" href="blog-category-04.html">Travel</a>
+                                <a className="nav-link color-green-hover" href="blog-category-04.html">صحة</a>
                             </li>  
                             <li className="nav-item">
-                                <a className="nav-link color-yellow-hover" href="blog-category-05.html"><i className="fa fa-play-circle-o"></i> Vlogs</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link color-grey-hover" href="blog-category-06.html">Health</a>
+                                <a className="nav-link color-pink-hover" href="index.html">الرئيسية</a>
                             </li>
                         </ul>
                     </div>
