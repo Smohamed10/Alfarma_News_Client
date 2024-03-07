@@ -136,13 +136,13 @@ a {
 .header {
   padding: 0.4rem 0;
   position: relative;
-  background-color: #027081;
+  background: url(images/header_bg_v2.jpg) repeat-x center  #ffffff;
 
 }
 
 .navbar-inverse .navbar-nav .nav-link,
 .navbar-nav .nav-link {
-  font-size: 15px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 1;
   padding: 0.9rem 0 0.8rem;
@@ -172,15 +172,16 @@ a {
 
 .header-section {
   /*padding: 3rem 0 1.5rem;*/
-  background: url(images/4394251_91649-removebg-preview.png) repeat-x   #ffffff;
+  background: url(images/header_bg_v2.jpg) repeat-x center  #ffffff;
+}
+
+.logo {
+  text-align: right;
 }
 
 .logo img {
-  max-width: 324px;
-  max-width: 100%;
-  margin: auto;
-  text-align: center;
-  display: block;
+  width: 150px; /* Adjust the width as needed */
+  height: auto;
 }
 
 .navbar-nav {
