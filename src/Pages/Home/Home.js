@@ -28,16 +28,16 @@ import image25 from '../../upload/blog_09.jpg';
 const Home = () => {
     return (
         <div>
-        <section class="section first-section">
-            <div class="container-fluid">
-                <div class="masonry-blog clearfix">
-                    <div class="left-side">
-                        <div class="masonry-box post-media">
-                             <img src={image1} alt="" class="img-fluid"/>
-                             <div class="shadoweffect">
-                                <div class="shadow-desc">
-                                    <div class="blog-meta">
-                                        <span class="bg-aqua"><a href="blog-category-01.html" title="">تعليم</a></span>
+        <section className="section first-section">
+            <div className="container-fluid">
+                <div className="masonry-blog clearfix">
+                    <div className="left-side">
+                        <div className="masonry-box post-media">
+                             <img src={image1} alt="" className="img-fluid"/>
+                             <div className="shadoweffect">
+                                <div className="shadow-desc">
+                                    <div className="blog-meta">
+                                        <span className="bg-aqua"><a href="blog-category-01.html" title="">تعليم</a></span>
                                         <h4><a href="single.html" title="">The golden rules you need to know for a positive life</a></h4>
                                         <small><a href="single.html" title="">24 July, 2017</a></small>
                                         <small><a href="blog-author.html" title="">by Amanda</a></small>
@@ -47,13 +47,13 @@ const Home = () => {
                         </div> 
                    </div> 
 
-                    <div class="center-side">
-                        <div class="masonry-box post-media">
-                             <img src={image2} alt="" class="img-fluid"/>
-                             <div class="shadoweffect">
-                                <div class="shadow-desc">
-                                    <div class="blog-meta">
-                                        <span class="bg-green"><a href="blog-category-01.html" title="">رياضة</a></span>
+                    <div className="center-side">
+                        <div className="masonry-box post-media">
+                             <img src={image2} alt="" className="img-fluid"/>
+                             <div className="shadoweffect">
+                                <div className="shadow-desc">
+                                    <div className="blog-meta">
+                                        <span className="bg-green"><a href="blog-category-01.html" title="">رياضة</a></span>
                                         <h4><a href="single.html" title="">5 places you should see</a></h4>
                                         <small><a href="single.html" title="">24 July, 2017</a></small>
                                         <small><a href="blog-author.html" title="">by Amanda</a></small>
@@ -62,24 +62,24 @@ const Home = () => {
                             </div> 
                         </div> 
 
-                        <div class="masonry-box small-box post-media">
-                             <img src={image3} alt="" class="img-fluid"/>
-                             <div class="shadoweffect">
-                                <div class="shadow-desc">
-                                    <div class="blog-meta">
-                                        <span class="bg-green"><a href="blog-category-01.html" title="">رياضة</a></span>
+                        <div className="masonry-box small-box post-media">
+                             <img src={image3} alt="" className="img-fluid"/>
+                             <div className="shadoweffect">
+                                <div className="shadow-desc">
+                                    <div className="blog-meta">
+                                        <span className="bg-green"><a href="blog-category-01.html" title="">رياضة</a></span>
                                         <h4><a href="single.html" title="">Separate your place with exotic hotels</a></h4>
                                     </div> 
                                 </div> 
                             </div> 
                         </div> 
 
-                        <div class="masonry-box small-box post-media">
-                             <img src={image4} alt="" class="img-fluid"/>
-                             <div class="shadoweffect">
-                                <div class="shadow-desc">
-                                    <div class="blog-meta">
-                                        <span class="bg-green"><a href="blog-category-01.html" title="">رياضة</a></span>
+                        <div className="masonry-box small-box post-media">
+                             <img src={image4} alt="" className="img-fluid"/>
+                             <div className="shadoweffect">
+                                <div className="shadow-desc">
+                                    <div className="blog-meta">
+                                        <span className="bg-green"><a href="blog-category-01.html" title="">رياضة</a></span>
                                         <h4><a href="single.html" title="">What you need to know for child health</a></h4>
                                     </div> 
                                 </div> 
@@ -87,13 +87,13 @@ const Home = () => {
                         </div> 
                     </div> 
 
-                    <div class="right-side hidden-md-down">
-                        <div class="masonry-box post-media">
-                             <img src={image5} alt="" class="img-fluid"/>
-                             <div class="shadoweffect">
-                                <div class="shadow-desc">
-                                    <div class="blog-meta">
-                                        <span class="bg-aqua"><a href="blog-category-01.html" title="">تعليم</a></span>
+                    <div className="right-side hidden-md-down">
+                        <div className="masonry-box post-media">
+                             <img src={image5} alt="" className="img-fluid"/>
+                             <div className="shadoweffect">
+                                <div className="shadow-desc">
+                                    <div className="blog-meta">
+                                        <span className="bg-aqua"><a href="blog-category-01.html" title="">تعليم</a></span>
                                         <h4><a href="single.html" title="">The rules you need to know for a happy union</a></h4>
                                         <small><a href="single.html" title="">03 July, 2017</a></small>
                                         <small><a href="blog-author.html" title="">by Jessica</a></small>
@@ -106,26 +106,26 @@ const Home = () => {
             </div>
         </section>
 
-        <section class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <div class="section-title">
-                            <h3 class="color-aqua"><a href="blog-category-01.html" title="">تعليم</a></h3>
+        <section className="section">
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div className="section-title">
+                            <h3 className="color-aqua"><a href="blog-category-01.html" title="">تعليم</a></h3>
                         </div> 
 
-                        <div class="row">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                <div class="blog-box">
-                                    <div class="post-media">
+                        <div className="row">
+                            <div className="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div className="blog-box">
+                                    <div className="post-media">
                                         <a href="single.html" title="">
-                                            <img src={image6} alt="" class="img-fluid"/>
-                                            <div class="hovereffect">
+                                            <img src={image6} alt="" className="img-fluid"/>
+                                            <div className="hovereffect">
                                                 <span></span>
                                             </div> 
                                         </a>
                                     </div> 
-                                    <div class="blog-meta big-meta">
+                                    <div className="blog-meta big-meta">
                                         <h4><a href="single.html" title="">The golden rules you need to know for a positive life</a></h4>
                                         <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh, maximus ac felis nec, maximus tempor odio.</p>
                                         <small><a href="blog-category-01.html" title="">تعليم</a></small>
@@ -134,18 +134,18 @@ const Home = () => {
                                     </div> 
                                 </div> 
 
-                                <hr class="invis"/>
+                                <hr className="invis"/>
 
-                                <div class="blog-box">
-                                    <div class="post-media">
+                                <div className="blog-box">
+                                    <div className="post-media">
                                         <a href="single.html" title="">
-                                            <img src={image7} alt="" class="img-fluid"/>
-                                            <div class="hovereffect">
+                                            <img src={image7} alt="" className="img-fluid"/>
+                                            <div className="hovereffect">
                                                 <span></span>
                                             </div> 
                                         </a>
                                     </div> 
-                                    <div class="blog-meta big-meta">
+                                    <div className="blog-meta big-meta">
                                         <h4><a href="single.html" title="">I have a desert visit this summer</a></h4>
                                         <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh, maximus ac felis nec, maximus tempor odio.</p>
                                         <small><a href="blog-category-01.html" title="">تعليم</a></small>
@@ -157,40 +157,40 @@ const Home = () => {
                         </div> 
                     </div> 
 
-                    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <div class="section-title">
-                            <h3 class="color-pink"><a href="blog-category-01.html" title="">فن</a></h3>
+                    <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div className="section-title">
+                            <h3 className="color-pink"><a href="blog-category-01.html" title="">فن</a></h3>
                         </div> 
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                <div class="blog-box">
-                                    <div class="post-media">
+                        <div className="row">
+                            <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div className="blog-box">
+                                    <div className="post-media">
                                         <a href="single.html" title="">
-                                            <img src={image8} alt="" class="img-fluid"/>
-                                            <div class="hovereffect">
+                                            <img src={image8} alt="" className="img-fluid"/>
+                                            <div className="hovereffect">
                                                 <span></span>
                                             </div> 
                                         </a>
                                     </div> 
-                                    <div class="blog-meta">
+                                    <div className="blog-meta">
                                         <h4><a href="single.html" title="">What is your favorite leather jacket color</a></h4>
                                         <small><a href="blog-category-01.html" title="">فن</a></small>
                                         <small><a href="blog-category-01.html" title="">21 July, 2017</a></small>
                                     </div> 
                                 </div> 
 
-                                <hr class="invis"/>
+                                <hr className="invis"/>
 
-                                <div class="blog-box">
-                                    <div class="post-media">
+                                <div className="blog-box">
+                                    <div className="post-media">
                                         <a href="single.html" title="">
-                                            <img src={image9} alt="" class="img-fluid"/>
-                                            <div class="hovereffect">
+                                            <img src={image9} alt="" className="img-fluid"/>
+                                            <div className="hovereffect">
                                                 <span></span>
                                             </div> 
                                         </a>
                                     </div> 
-                                    <div class="blog-meta">
+                                    <div className="blog-meta">
                                         <h4><a href="single.html" title="">Is summer, have you bought a cane</a></h4>
                                         <small><a href="blog-category-01.html" title="">فن</a></small>
                                         <small><a href="blog-category-01.html" title="">11 July, 2017</a></small>
@@ -198,35 +198,35 @@ const Home = () => {
                                 </div> 
                             </div> 
 
-                            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                <div class="blog-box">
-                                    <div class="post-media">
+                            <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <div className="blog-box">
+                                    <div className="post-media">
                                         <a href="single.html" title="">
-                                            <img src={image10} alt="" class="img-fluid"/>
-                                            <div class="hovereffect">
+                                            <img src={image10} alt="" className="img-fluid"/>
+                                            <div className="hovereffect">
                                                 <span></span>
                                             </div> 
                                         </a>
                                     </div> 
-                                    <div class="blog-meta">
+                                    <div className="blog-meta">
                                         <h4><a href="single.html" title="">This year's fashionable long beard</a></h4>
                                         <small><a href="blog-category-01.html" title="">فن</a></small>
                                         <small><a href="blog-category-01.html" title="">08 July, 2017</a></small>
                                     </div> 
                                 </div> 
 
-                                <hr class="invis"/>
+                                <hr className="invis"/>
 
-                                <div class="blog-box">
-                                    <div class="post-media">
+                                <div className="blog-box">
+                                    <div className="post-media">
                                         <a href="single.html" title="">
-                                            <img src={image11} alt="" class="img-fluid"/>
-                                            <div class="hovereffect">
+                                            <img src={image11} alt="" className="img-fluid"/>
+                                            <div className="hovereffect">
                                                 <span></span>
                                             </div> 
                                         </a>
                                     </div> 
-                                    <div class="blog-meta">
+                                    <div className="blog-meta">
                                         <h4><a href="single.html" title="">How to be more cool with clothing</a></h4>
                                         <small><a href="blog-category-01.html" title="">فن</a></small>
                                         <small><a href="blog-category-01.html" title="">04 July, 2017</a></small>
@@ -237,38 +237,38 @@ const Home = () => {
                     </div> 
                 </div> 
 
-                <hr class="invis1"/>
+                <hr className="invis1"/>
 
-                <div class="row">
-                    <div class="col-lg-10 offset-lg-1">
-                        <div class="banner-spot clearfix">
-                            <div class="banner-img">
-                                <img src={image12} alt="" class="img-fluid"/>
+                <div className="row">
+                    <div className="col-lg-10 offset-lg-1">
+                        <div className="banner-spot clearfix">
+                            <div className="banner-img">
+                                <img src={image12} alt="" className="img-fluid"/>
                             </div> 
                         </div> 
                     </div> 
                 </div> 
 
-                <hr class="invis1"/>
+                <hr className="invis1"/>
 
-                <div class="row">
-                    <div class="col-lg-9">
-                        <div class="blog-list clearfix">
-                            <div class="section-title">
-                                <h3 class="color-green"><a href="blog-category-01.html" title="">رياضة</a></h3>
+                <div className="row">
+                    <div className="col-lg-9">
+                        <div className="blog-list clearfix">
+                            <div className="section-title">
+                                <h3 className="color-green"><a href="blog-category-01.html" title="">رياضة</a></h3>
                             </div> 
 
-                            <div class="blog-box row">
-                                <div class="col-md-4">
-                                    <div class="post-media">
+                            <div className="blog-box row">
+                                <div className="col-md-4">
+                                    <div className="post-media">
                                         <a href="single.html" title="">
-                                            <img src={image14} alt="" class="img-fluid"/>
-                                            <div class="hovereffect"></div>
+                                            <img src={image14} alt="" className="img-fluid"/>
+                                            <div className="hovereffect"></div>
                                         </a>
                                     </div> 
                                 </div> 
 
-                                <div class="blog-meta big-meta col-md-8">
+                                <div className="blog-meta big-meta col-md-8">
                                     <h4><a href="single.html" title="">5 Beautiful buildings you need to visit without dying</a></h4>
                                     <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh, maximus ac felis nec, maximus tempor odio.</p>
                                     <small><a href="blog-category-01.html" title="">رياضة</a></small>
@@ -277,19 +277,19 @@ const Home = () => {
                                 </div> 
                             </div> 
 
-                            <hr class="invis"/>
+                            <hr className="invis"/>
 
-                            <div class="blog-box row">
-                                <div class="col-md-4">
-                                    <div class="post-media">
+                            <div className="blog-box row">
+                                <div className="col-md-4">
+                                    <div className="post-media">
                                         <a href="single.html" title="">
-                                            <img src={image15} alt="" class="img-fluid"/>
-                                            <div class="hovereffect"></div>
+                                            <img src={image15} alt="" className="img-fluid"/>
+                                            <div className="hovereffect"></div>
                                         </a>
                                     </div> 
                                 </div> 
 
-                                <div class="blog-meta big-meta col-md-8">
+                                <div className="blog-meta big-meta col-md-8">
                                     <h4><a href="single.html" title="">Let's make an introduction to the glorious world of history</a></h4>
                                     <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh, maximus ac felis nec, maximus tempor odio.</p>
                                     <small><a href="blog-category-01.html" title="">رياضة</a></small>
@@ -298,19 +298,19 @@ const Home = () => {
                                 </div> 
                             </div> 
 
-                            <hr class="invis"/>
+                            <hr className="invis"/>
 
-                            <div class="blog-box row">
-                                <div class="col-md-4">
-                                    <div class="post-media">
+                            <div className="blog-box row">
+                                <div className="col-md-4">
+                                    <div className="post-media">
                                         <a href="single.html" title="">
-                                            <img src={image16} alt="" class="img-fluid"/>
-                                            <div class="hovereffect"></div>
+                                            <img src={image16} alt="" className="img-fluid"/>
+                                            <div className="hovereffect"></div>
                                         </a>
                                     </div> 
                                 </div> 
 
-                                <div class="blog-meta big-meta col-md-8">
+                                <div className="blog-meta big-meta col-md-8">
                                     <h4><a href="single.html" title="">Did you see the most beautiful sea in the world?</a></h4>
                                     <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh, maximus ac felis nec, maximus tempor odio.</p>
                                     <small><a href="blog-category-01.html" title="">رياضة</a></small>
@@ -320,24 +320,24 @@ const Home = () => {
                             </div> 
                         </div> 
 
-                        <hr class="invis"/>
+                        <hr className="invis"/>
 
-                        <div class="blog-list clearfix">
-                            <div class="section-title">
-                                <h3 class="color-red"><a href="blog-category-01.html" title="">اقتصاد</a></h3>
+                        <div className="blog-list clearfix">
+                            <div className="section-title">
+                                <h3 className="color-red"><a href="blog-category-01.html" title="">اقتصاد</a></h3>
                             </div> 
 
-                            <div class="blog-box row">
-                                <div class="col-md-4">
-                                    <div class="post-media">
+                            <div className="blog-box row">
+                                <div className="col-md-4">
+                                    <div className="post-media">
                                         <a href="single.html" title="">
-                                            <img src={image17} alt="" class="img-fluid"/>
-                                            <div class="hovereffect"></div>
+                                            <img src={image17} alt="" className="img-fluid"/>
+                                            <div className="hovereffect"></div>
                                         </a>
                                     </div> 
                                 </div> 
 
-                                <div class="blog-meta big-meta col-md-8">
+                                <div className="blog-meta big-meta col-md-8">
                                     <h4><a href="single.html" title="">Banana-chip chocolate cake recipe</a></h4>
                                     <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh, maximus ac felis nec, maximus tempor odio.</p>
                                     <small><a href="blog-category-01.html" title="">اقتصاد</a></small>
@@ -346,19 +346,19 @@ const Home = () => {
                                 </div> 
                             </div> 
 
-                            <hr class="invis"/>
+                            <hr className="invis"/>
 
-                            <div class="blog-box row">
-                                <div class="col-md-4">
-                                    <div class="post-media">
+                            <div className="blog-box row">
+                                <div className="col-md-4">
+                                    <div className="post-media">
                                         <a href="single.html" title="">
-                                            <img src={image18} alt="" class="img-fluid"/>
-                                            <div class="hovereffect"></div>
+                                            <img src={image18} alt="" className="img-fluid"/>
+                                            <div className="hovereffect"></div>
                                         </a>
                                     </div> 
                                 </div> 
 
-                                <div class="blog-meta big-meta col-md-8">
+                                <div className="blog-meta big-meta col-md-8">
                                     <h4><a href="single.html" title="">10 practical ways to choose organic vegetables</a></h4>
                                     <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh, maximus ac felis nec, maximus tempor odio.</p>
                                     <small><a href="blog-category-01.html" title="">اقتصاد</a></small>
@@ -367,19 +367,19 @@ const Home = () => {
                                 </div> 
                             </div> 
 
-                            <hr class="invis"/>
+                            <hr className="invis"/>
 
-                            <div class="blog-box row">
-                                <div class="col-md-4">
-                                    <div class="post-media">
+                            <div className="blog-box row">
+                                <div className="col-md-4">
+                                    <div className="post-media">
                                         <a href="single.html" title="">
-                                            <img src={image19} alt="" class="img-fluid"/>
-                                            <div class="hovereffect"></div>
+                                            <img src={image19} alt="" className="img-fluid"/>
+                                            <div className="hovereffect"></div>
                                         </a>
                                     </div> 
                                 </div> 
 
-                                <div class="blog-meta big-meta col-md-8">
+                                <div className="blog-meta big-meta col-md-8">
                                     <h4><a href="single.html" title="">We are making homemade ravioli</a></h4>
                                     <p>Aenean interdum arcu blandit, vehicula magna non, placerat elit. Mauris et pharetratortor. Suspendissea sodales urna. In at augue elit. Vivamus enim nibh, maximus ac felis nec, maximus tempor odio.</p>
                                     <small><a href="blog-category-01.html" title="">اقتصاد</a></small>
@@ -390,115 +390,115 @@ const Home = () => {
                         </div> 
                     </div> 
 
-                    <div class="col-lg-3">
-                        <div class="section-title">
-                            <h3 class="color-yellow"><a href="blog-category-01.html" title="">بترول</a></h3>
+                    <div className="col-lg-3">
+                        <div className="section-title">
+                            <h3 className="color-yellow"><a href="blog-category-01.html" title="">بترول</a></h3>
                         </div> 
 
-                        <div class="blog-box">
-                            <div class="post-media">
+                        <div className="blog-box">
+                            <div className="post-media">
                                 <a href="single.html" title="">
-                                    <img src={image20} alt="" class="img-fluid"/>
-                                    <div class="hovereffect">
-                                        <span class="videohover"></span>
+                                    <img src={image20} alt="" className="img-fluid"/>
+                                    <div className="hovereffect">
+                                        <span className="videohover"></span>
                                     </div> 
                                 </a>
                             </div> 
-                            <div class="blog-meta">
+                            <div className="blog-meta">
                                 <h4><a href="single.html" title="">We are guests of ABC Design Studio - Vlog</a></h4>
                                 <small><a href="blog-category-01.html" title="">Videos</a></small>
                                 <small><a href="blog-category-01.html" title="">21 July, 2017</a></small>
                             </div> 
                         </div> 
 
-                        <hr class="invis"/>
+                        <hr className="invis"/>
 
-                        <div class="blog-box">
-                            <div class="post-media">
+                        <div className="blog-box">
+                            <div className="post-media">
                                 <a href="single.html" title="">
-                                    <img src={image21} alt="" class="img-fluid"/>
-                                    <div class="hovereffect">
-                                        <span class="videohover"></span>
+                                    <img src={image21} alt="" className="img-fluid"/>
+                                    <div className="hovereffect">
+                                        <span className="videohover"></span>
                                     </div> 
                                 </a>
                             </div> 
-                            <div class="blog-meta">
+                            <div className="blog-meta">
                                 <h4><a href="single.html" title="">Nostalgia at work</a></h4>
                                 <small><a href="blog-category-01.html" title="">Videos</a></small>
                                 <small><a href="blog-category-01.html" title="">20 July, 2017</a></small>
                             </div> 
                         </div> 
 
-                        <hr class="invis"/>
+                        <hr className="invis"/>
 
-                        <div class="blog-box">
-                            <div class="post-media">
+                        <div className="blog-box">
+                            <div className="post-media">
                                 <a href="single.html" title="">
-                                    <img src={image22} alt="" class="img-fluid"/>
-                                    <div class="hovereffect">
-                                        <span class="videohover"></span>
+                                    <img src={image22} alt="" className="img-fluid"/>
+                                    <div className="hovereffect">
+                                        <span className="videohover"></span>
                                     </div> 
                                 </a>
                             </div> 
-                            <div class="blog-meta">
+                            <div className="blog-meta">
                                 <h4><a href="single.html" title="">How to become a good vlogger</a></h4>
                                 <small><a href="blog-category-01.html" title="">Beauty</a></small>
                                 <small><a href="blog-category-01.html" title="">20 July, 2017</a></small>
                             </div> 
                         </div> 
 
-                        <hr class="invis"/>
+                        <hr className="invis"/>
 
-                        <div class="section-title">
-                            <h3 class="color-grey"><a href="blog-category-01.html" title="">صحة</a></h3>
+                        <div className="section-title">
+                            <h3 className="color-grey"><a href="blog-category-01.html" title="">صحة</a></h3>
                         </div> 
 
-                        <div class="blog-box">
-                            <div class="post-media">
+                        <div className="blog-box">
+                            <div className="post-media">
                                 <a href="single.html" title="">
-                                    <img src={image23} alt="" class="img-fluid"/>
-                                    <div class="hovereffect">
+                                    <img src={image23} alt="" className="img-fluid"/>
+                                    <div className="hovereffect">
                                         <span></span>
                                     </div> 
                                 </a>
                             </div> 
-                            <div class="blog-meta">
+                            <div className="blog-meta">
                                 <h4><a href="single.html" title="">Opened the doors of the Istanbul spa center</a></h4>
                                 <small><a href="blog-category-01.html" title="">Spa</a></small>
                                 <small><a href="blog-category-01.html" title="">21 July, 2017</a></small>
                             </div> 
                         </div> 
 
-                        <hr class="invis"/>
+                        <hr className="invis"/>
 
-                        <div class="blog-box">
-                            <div class="post-media">
+                        <div className="blog-box">
+                            <div className="post-media">
                                 <a href="single.html" title="">
-                                    <img src={image24} alt="" class="img-fluid"/>
-                                    <div class="hovereffect">
+                                    <img src={image24} alt="" className="img-fluid"/>
+                                    <div className="hovereffect">
                                         <span></span>
                                     </div> 
                                 </a>
                             </div> 
-                            <div class="blog-meta">
+                            <div className="blog-meta">
                                 <h4><a href="single.html" title="">2017 trends in health tourism</a></h4>
                                 <small><a href="blog-category-01.html" title="">صحة</a></small>
                                 <small><a href="blog-category-01.html" title="">20 July, 2017</a></small>
                             </div> 
                         </div> 
 
-                        <hr class="invis"/>
+                        <hr className="invis"/>
 
-                        <div class="blog-box">
-                            <div class="post-media">
+                        <div className="blog-box">
+                            <div className="post-media">
                                 <a href="single.html" title="">
-                                    <img src={image25} alt="" class="img-fluid"/>
-                                    <div class="hovereffect">
+                                    <img src={image25} alt="" className="img-fluid"/>
+                                    <div className="hovereffect">
                                         <span></span>
                                     </div> 
                                 </a>
                             </div> 
-                            <div class="blog-meta">
+                            <div className="blog-meta">
                                 <h4><a href="single.html" title="">Experience the effects of miraculous stones</a></h4>
                                 <small><a href="blog-category-01.html" title="">Beauty</a></small>
                                 <small><a href="blog-category-01.html" title="">20 July, 2017</a></small>
@@ -507,12 +507,12 @@ const Home = () => {
                     </div> 
                 </div> 
 
-                <hr class="invis1"/>
-                <div class="row">
-                    <div class="col-lg-10 offset-lg-1">
-                        <div class="banner-spot clearfix">
-                            <div class="banner-img">
-                                <img src={image13} alt="" class="img-fluid"/>
+                <hr className="invis1"/>
+                <div className="row">
+                    <div className="col-lg-10 offset-lg-1">
+                        <div className="banner-spot clearfix">
+                            <div className="banner-img">
+                                <img src={image13} alt="" className="img-fluid"/>
                             </div> 
                         </div> 
                     </div> 

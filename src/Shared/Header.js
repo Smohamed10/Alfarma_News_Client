@@ -1,19 +1,20 @@
 import React from 'react';
 import logo_vid from"../images/footer_logo.png";
+import { Navbar, Nav, Container ,NavDropdown,Button} from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+const CustomNavDropdown = ({ title, children, id }) => {
+    return (
+        <NavDropdown title={title} id={id}>
+            {children}
+        </NavDropdown>
+    );
+}
+
+
 const Header = () => {
     return (
 <div>
     <div id="wrapper">
-        <div className="collapse top-search" id="collapseExample">
-            <div className="card card-block">
-                <div className="newsletter-widget text-center">
-                    <form className="form-inline">
-                        <input type="text" className="form-control" placeholder="What you are looking for?"/>
-                        <button type="submit" className="btn btn-primary"><i className="fa fa-search"></i></button>
-                    </form>
-                </div>
-            </div>
-        </div>
         <div className="topbar-section">
             <div className="container-fluid">
                 <div className="row">
@@ -41,7 +42,10 @@ const Header = () => {
 
                     <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12">
                         <div className="topsearch text-right">
-                            <a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><i className="fa fa-search"></i> Search</a>
+                        <Link to="/login">
+            {/* Use transparent text and border color to make the button invisible */}
+            <Button variant="warning" type="submit" style={{ color: 'transparent', border: 'none', backgroundColor: 'transparent', width: '50px', height: '40px', padding: '0', margin: '0', overflow: 'hidden' }} />
+        </Link>    
                         </div>
                     </div>
                 </div>
@@ -49,132 +53,49 @@ const Header = () => {
         </div>
 
 
+        <div>
+      <Navbar bg="light" expand="lg">
+        <Container>
 
-        <header className="header">
-            <div className="container">
-                <nav className="navbar navbar-inverse navbar-toggleable-md" >
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+            <CustomNavDropdown title="المزيد" id="collapsible-nav-dropdown">
+            <NavDropdown.Item href="#action/3.1">الموقع الاول</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">الموقع الثاني </NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.1">الموقع الثالث</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">الموقع الرابع </NavDropdown.Item>
+            </CustomNavDropdown>
+            <Nav.Link as={Link} to="/">تكنولوجيا</Nav.Link>
+            <Nav.Link as={Link} to="/">عالم</Nav.Link>
+            <Nav.Link as={Link} to="/">حوادث</Nav.Link>
+            <Nav.Link as={Link} to="/">محافظات</Nav.Link>
 
-                <button className="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#cloapediamenu" aria-controls="cloapediamenu" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
-                    <div className="collapse navbar-collapse justify-content-md-center" id="cloapediamenu">
-                        <ul className="navbar-nav">
-                        <li className="nav-item">
-                                <a className="nav-link color-pink-hover" href="index.html">اعمال</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link color-pink-hover" href="index.html">شئون عربية
- </a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link color-pink-hover" href="index.html"> حوادث</a>
-                            </li>
-
-                            <li className="nav-item dropdown has-submenu">
-                                <a className="nav-link dropdown-toggle" href=" " id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">بترول</a>
-                                <ul className="dropdown-menu" aria-labelledby="dropdown02">
-                                    <li><a className="dropdown-item" href="single.html">Single Blog <span className="hidden-md-down hidden-sm-down hidden-xs-down"><i className="fa fa-angle-right"></i></span></a>
-                                        <ul className="dropdown-menu">
-                                            <li><a className="dropdown-item" href="single.html">Single Default</a></li>
-                                            <li><a className="dropdown-item" href="single-fullwidth.html">Single Fullwidth</a></li>
-                                            <li><a className="dropdown-item" href="single-slider.html">Single Gallery</a></li>
-                                            <li><a className="dropdown-item" href="single-video.html">Single Video</a></li>
-                                            <li><a className="dropdown-item" href="single-audio.html">Single Audio</a></li>
-                                            <li><a className="dropdown-item" href="single-no-media.html">Single No Media</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a className="dropdown-item" href="single.html">Blog Category <span className="hidden-md-down hidden-sm-down hidden-xs-down"><i className="fa fa-angle-right"></i></span></a>
-                                        <ul className="dropdown-menu">
-                                            <li><a className="dropdown-item" href="blog-category-01.html">Blog Category A</a></li>
-                                            <li><a className="dropdown-item" href="blog-category-02.html">Blog Category B</a></li>
-                                            <li><a className="dropdown-item" href="blog-category-03.html">Blog Category C</a></li>
-                                            <li><a className="dropdown-item" href="blog-category-04.html">Blog Category D</a></li>
-                                            <li><a className="dropdown-item" href="blog-category-05.html">Blog Category E</a></li>
-                                            <li><a className="dropdown-item" href="blog-category-06.html">Blog Category F</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a className="dropdown-item" href="blog-author.html">Blog Author</a></li>
-                                    <li><a className="dropdown-item" href="page-contact.html">Contact Page</a></li>
-                                    <li><a className="dropdown-item" href="page.html">Default Page</a></li>
-                                    <li><a className="dropdown-item" href="page-fullwidth.html">Fullwidth Page</a></li>
-                                    <li><a className="dropdown-item" href="page-404.html">Not Found Page</a></li>
-                                    <li><a className="dropdown-item" href="page-sitemap.html">Sitemap & Archives</a></li>
-                                </ul>
-                            </li>
+            <CustomNavDropdown title="اقتصاد" id="collapsible-nav-dropdown">
+            <NavDropdown.Item href="#action/3.1">الموقع الاول</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">الموقع الثاني </NavDropdown.Item>
+            </CustomNavDropdown>
+            <CustomNavDropdown title="بترول" id="collapsible-nav-dropdown">
+                <NavDropdown.Item href="#action/3.1">الموقع الاول</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">الموقع الثاني </NavDropdown.Item>
+            </CustomNavDropdown>
+            
+              <Nav.Link as={Link} to="/login">رياضة</Nav.Link>
+               <Nav.Link as={Link} to="/register">فن</Nav.Link>
+              <Nav.Link as={Link} to="/contact">تعليم</Nav.Link>
+            <Nav.Link as={Link} to="/about">صحة</Nav.Link>
 
 
-                            <li className="nav-item">
-                                <a className="nav-link color-pink-hover" href="index.html">محافظات</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link color-pink-hover" href="index.html">اخبار عالمية</a>
-                            </li>
+            <Nav.Link as={Link} to="/">الرئيسية</Nav.Link>
 
-
-                            <li className="nav-item dropdown has-submenu">
-                                <a className="nav-link dropdown-toggle" href=" " id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">اقتصاد</a>
-                                <ul className="dropdown-menu" aria-labelledby="dropdown02">
-                                    <li><a className="dropdown-item" href="single.html">Single Blog <span className="hidden-md-down hidden-sm-down hidden-xs-down"><i className="fa fa-angle-right"></i></span></a>
-                                        <ul className="dropdown-menu">
-                                            <li><a className="dropdown-item" href="single.html">Single Default</a></li>
-                                            <li><a className="dropdown-item" href="single-fullwidth.html">Single Fullwidth</a></li>
-                                            <li><a className="dropdown-item" href="single-slider.html">Single Gallery</a></li>
-                                            <li><a className="dropdown-item" href="single-video.html">Single Video</a></li>
-                                            <li><a className="dropdown-item" href="single-audio.html">Single Audio</a></li>
-                                            <li><a className="dropdown-item" href="single-no-media.html">Single No Media</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a className="dropdown-item" href="single.html">Blog Category <span className="hidden-md-down hidden-sm-down hidden-xs-down"><i className="fa fa-angle-right"></i></span></a>
-                                        <ul className="dropdown-menu">
-                                            <li><a className="dropdown-item" href="blog-category-01.html">Blog Category A</a></li>
-                                            <li><a className="dropdown-item" href="blog-category-02.html">Blog Category B</a></li>
-                                            <li><a className="dropdown-item" href="blog-category-03.html">Blog Category C</a></li>
-                                            <li><a className="dropdown-item" href="blog-category-04.html">Blog Category D</a></li>
-                                            <li><a className="dropdown-item" href="blog-category-05.html">Blog Category E</a></li>
-                                            <li><a className="dropdown-item" href="blog-category-06.html">Blog Category F</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a className="dropdown-item" href="blog-author.html">Blog Author</a></li>
-                                    <li><a className="dropdown-item" href="page-contact.html">Contact Page</a></li>
-                                    <li><a className="dropdown-item" href="page.html">Default Page</a></li>
-                                    <li><a className="dropdown-item" href="page-fullwidth.html">Fullwidth Page</a></li>
-                                    <li><a className="dropdown-item" href="page-404.html">Not Found Page</a></li>
-                                    <li><a className="dropdown-item" href="page-sitemap.html">Sitemap & Archives</a></li>
-                                </ul>
-                            </li>
-
-                            <li className="nav-item">
-                                <a className="nav-link color-black-hover" href="blog-category-01.html">رياضه</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link color-red-hover" href="blog-category-02.html">فن</a>
-                            </li>
-
-                            <li className="nav-item">
-                                <a className="nav-link color-aqua-hover" href="blog-category-03.html">تعليم</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link color-green-hover" href="blog-category-04.html">صحة</a>
-                            </li>  
-                            <li className="nav-item">
-                                <a className="nav-link color-pink-hover" href="index.html">الرئيسية</a>
-                            </li>
-
-                        </ul>
-                        
-                    </div>
-                    <div className="row justify-content-end align-items-center">
-    <div className="col-md-6">
-        <div className="logo">
-            <a href="index.html">
-                <img alt='logo' src={logo_vid} />        
-            </a>
-        </div>
+            </Nav>
+          </Navbar.Collapse>
+          <Navbar.Brand as={Link} to="/" className="logo">
+            <span className="Ankh"></span><img src={logo_vid} alt='logo'/>
+          </Navbar.Brand>
+        </Container>
+      </Navbar>
     </div>
-</div>
-                </nav>
-            </div>
-        </header>
 </div>
 </div>
 

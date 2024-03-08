@@ -23,34 +23,33 @@ const Login = () => {
 					</span>
 					<div className="wrap-input100 validate-input" data-validate = "Valid email is: a@b.c">
 						<input className="input100" type="text" name="email"/>
-						<span className="focus-input100" data-placeholder="Email"></span>
+						<span className="focus-input100" data-placeholder="البريد الالكتروني"></span>
 					</div>
+
 
 					<div className="wrap-input100 validate-input" data-validate="Enter password">
 						<span className="btn-show-pass">
 							<i className="zmdi zmdi-eye"></i>
 						</span>
 						<input className="input100" type="password" name="pass"/>
-						<span className="focus-input100" data-placeholder="Password"></span>
+						<span className="focus-input100" data-placeholder="كلمة المرور"></span>
 					</div>
 
 					<div className="container-login100-form-btn">
 						<div className="wrap-login100-form-btn">
 							<div className="login100-form-bgbtn"></div>
 							<button className="login100-form-btn">
-								Login
+								دخول
 							</button>
 						</div>
 					</div>
 
 					<div className="text-center p-t-115">
 						<span className="txt1">
-							Don't have an account?
-						</span>
+ترغب بتسجيل ادمن اخر؟						</span>
                         <br/>
 						<a className="txt2" href="/register">
-							Sign Up
-						</a>
+سجل الان						</a>
 					</div>
 				</form>
 			</div>

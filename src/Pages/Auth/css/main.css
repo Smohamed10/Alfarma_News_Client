@@ -143,14 +143,14 @@ iframe {
 .txt1 {
   font-family: Poppins-Regular;
   font-size: 13px;
-  color: #666666;
+  color: #000000;
   line-height: 1.5;
 }
 
 .txt2 {
   font-family: Poppins-Regular;
   font-size: 13px;
-  color: #333333;
+  color: #ff0000;
   line-height: 1.5;
 }
 
