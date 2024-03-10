@@ -1,7 +1,8 @@
 import React from 'react';
 import logo_vid from"../images/footer_logo.png";
 import { Navbar, Nav, Container ,NavDropdown,Button} from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { removeAuthUser, getAuthUser } from '../Helper/Storage';
 const CustomNavDropdown = ({ title, children, id }) => {
     return (
         <NavDropdown title={title} id={id}>
@@ -12,6 +13,14 @@ const CustomNavDropdown = ({ title, children, id }) => {
 
 
 const Header = () => {
+    const Auth=getAuthUser();
+    const navigate = useNavigate();
+  
+      const Logout = () => { 
+      removeAuthUser();
+      navigate('/');
+      }
+  
     return (
 <div>
     <div id="wrapper">
@@ -55,11 +64,14 @@ const Header = () => {
 
         <div>
       <Navbar bg="light" expand="lg">
+      {Auth && <Nav.Link onClick={Logout} className='btn btn-sm btn-danger mx-2'>تسجيل الخروج</Nav.Link>}
+
         <Container>
 
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
+
             <CustomNavDropdown title="المزيد" id="collapsible-nav-dropdown">
             <NavDropdown.Item href="#action/3.1">الموقع الاول</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">الموقع الثاني </NavDropdown.Item>
@@ -80,7 +92,7 @@ const Header = () => {
                 <NavDropdown.Item href="#action/3.2">الموقع الثاني </NavDropdown.Item>
             </CustomNavDropdown>
             
-              <Nav.Link as={Link} to="/login">رياضة</Nav.Link>
+              <Nav.Link as={Link} to="/sports">رياضة</Nav.Link>
                <Nav.Link as={Link} to="/register">فن</Nav.Link>
               <Nav.Link as={Link} to="/contact">تعليم</Nav.Link>
             <Nav.Link as={Link} to="/about">صحة</Nav.Link>

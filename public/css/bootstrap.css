@@ -2258,6 +2258,8 @@ pre code {
   -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  text-align: right;
+
 }
 
 .form-control::-ms-expand {
@@ -3134,7 +3136,9 @@ tbody.collapse.show {
 
 .dropup,
 .dropdown {
+  
   position: relative;
+  
 }
 
 .dropdown-toggle::after {
@@ -7786,10 +7790,13 @@ a.bg-inverse:focus, a.bg-inverse:hover {
 .py-4 {
   padding-top: 1.5rem !important;
   padding-bottom: 1.5rem !important;
+  
 }
 
 .p-5 {
   padding: 3rem 3rem !important;
+  text-align: right;
+
 }
 
 .pt-5 {

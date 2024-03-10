@@ -325,6 +325,7 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+          
 }
 
 @-ms-viewport {
@@ -450,6 +451,7 @@ summary,
 textarea {
   -ms-touch-action: manipulation;
       touch-action: manipulation;
+      
 }
 
 table {
@@ -537,6 +539,8 @@ h1, h2, h3, h4, h5, h6,
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
+  text-align: right;
+
 }
 
 h1, .h1 {

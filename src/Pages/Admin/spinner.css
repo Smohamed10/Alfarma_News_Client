@@ -1,0 +1,26 @@
+.loading-spinner-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7); /* Semi-transparent white background for overlay effect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999; /* Higher z-index to make sure it's on top of other elements */
+}
+
+.loading-spinner-container {
+    width: 100px; /* Adjust the width and height of the container based on your image size */
+    height: 100px;
+    background-image: url('./earthspinner.png'); /* Replace 'path/to/earth-image.png' with the path to your Earth image */
+    background-size: cover;
+    border-radius: 50%; /* Ensure the container is circular */
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
