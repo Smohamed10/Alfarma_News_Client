@@ -24,7 +24,9 @@ import image22 from '../../upload/blog_12.jpg';
 import image23 from '../../upload/blog_07.jpg';
 import image24 from '../../upload/blog_08.jpg';
 import image25 from '../../upload/blog_09.jpg';
+//import {Cloudinary} from "@cloudinary/url-gen";
 
+//const cld = new Cloudinary({cloud: {cloudName: 'dyeqmtxsd'}});
 const Home = () => {
     return (
         <div>
