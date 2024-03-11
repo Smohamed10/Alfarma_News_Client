@@ -118,13 +118,11 @@ const Footer = () => {
                         <div className="widget">
                             <div className="footer-text text-center">
                                 <a href="/"><img src={footer_logo} alt="" className="img-fluid" style={{width: '500px', height: '300px'}}/></a>
-                                <p>موقع اخباري عالمي</p>
+                                <p>ابقى على اطلاع دائم مع ! الفرما يقدم هذا الموقع الإلكتروني المصري المميز تغطية شاملة للأخبار المحلية والعالمية على مدار الساعة. ستجد آخر المستجدات على الساحة المصرية، بالإضافة إلى تحليل للقضايا العالمية المهمة التي تؤثر على المنطقة والعالم. يلتزم فريق عمل الفرما بالدقة والموضوعية في عرضه للأنباء، مع توفير محتوى متنوع يلبي اهتمامات القراء المختلفة.</p>
                                 <div className="social">
-                                    <a href=" " data-toggle="tooltip" data-placement="bottom" title="Facebook"><i className="fa fa-facebook"></i></a>              
-                                    <a href=" " data-toggle="tooltip" data-placement="bottom" title="Twitter"><i className="fa fa-twitter"></i></a>
-                                    <a href=" " data-toggle="tooltip" data-placement="bottom" title="Instagram"><i className="fa fa-instagram"></i></a>
-                                    <a href=" " data-toggle="tooltip" data-placement="bottom" title="Google Plus"><i className="fa fa-google-plus"></i></a>
-                                    <a href=" " data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i className="fa fa-pinterest"></i></a>
+                                    <a href="https://www.facebook.com/share/ad4yX2ao2QedpxKL/?mibextid=qi2Omg" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i className="fa fa-facebook"></i></a>              
+                                    <a href="https://wa.me/01067554142" data-toggle="tooltip" data-placement="bottom" title="Whatsapp"><i className="fa fa-whatsapp"></i></a>
+                                    <a href="https://www.instagram.com/elfaramanews?igsh=MXAyZ25oeDNqYnkyZQ==" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i className="fa fa-instagram"></i></a>
                                 </div>
 
                             </div>

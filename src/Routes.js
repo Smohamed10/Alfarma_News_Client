@@ -15,6 +15,7 @@ import Health from "./Pages/Health/Health";
 import Petrol from "./Pages/Petrol/Petrol";
 import Technology from "./Pages/Technology/Technology";
 import World from "./Pages/World/World";
+import Contact from "./Pages/Contact/Contact";
 
 export const routes = createBrowserRouter([
     {
@@ -38,6 +39,10 @@ export const routes = createBrowserRouter([
             {
                 path: "/Post",
                 element: <CreatePost/>,
+            },
+            {
+                path: "/Contact",
+                element: <Contact/>,
             },
                 
             {

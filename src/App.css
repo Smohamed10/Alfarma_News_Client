@@ -1955,3 +1955,11 @@ hr.invis3 {
   -o-border-radius: 50%;
   border-radius: 50%
 }
+
+.address {
+  direction: rtl; /* Set text direction to right-to-left */
+}
+
+.address span {
+  direction: ltr; /* Set text direction to left-to-right */
+}
