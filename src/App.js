@@ -6,6 +6,7 @@ import"./css/bootstrap.css" ;
 import"./css/font-awesome.min.css"; 
 import"./css/responsive.css"; 
 import"./css/colors.css";
+import "./Pages/Admin/spinner.css";
 
 
 function App() {

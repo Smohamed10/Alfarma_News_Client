@@ -78,24 +78,22 @@ const Header = () => {
                 <NavDropdown.Item href="#action/3.1">الموقع الثالث</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">الموقع الرابع </NavDropdown.Item>
             </CustomNavDropdown>
-            <Nav.Link as={Link} to="/">تكنولوجيا</Nav.Link>
-            <Nav.Link as={Link} to="/">عالم</Nav.Link>
-            <Nav.Link as={Link} to="/">حوادث</Nav.Link>
-            <Nav.Link as={Link} to="/">محافظات</Nav.Link>
+            <Nav.Link as={Link} to="/Technology">تكنولوجيا</Nav.Link>
+            <Nav.Link as={Link} to="/World">عالم</Nav.Link>
+            <Nav.Link as={Link} to="/Accident">حوادث</Nav.Link>
+            <Nav.Link as={Link} to="/Governorate">محافظات</Nav.Link>
+            <Nav.Link as={Link} to="/Economy">اقتصاد</Nav.Link>
 
-            <CustomNavDropdown title="اقتصاد" id="collapsible-nav-dropdown">
-            <NavDropdown.Item href="#action/3.1">الموقع الاول</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">الموقع الثاني </NavDropdown.Item>
-            </CustomNavDropdown>
-            <CustomNavDropdown title="بترول" id="collapsible-nav-dropdown">
+            <Nav.Link as={Link} to="/Petrol">بترول</Nav.Link>
+
+            {/*            <CustomNavDropdown title="بترول" id="collapsible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">الموقع الاول</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">الموقع الثاني </NavDropdown.Item>
-            </CustomNavDropdown>
-            
-              <Nav.Link as={Link} to="/sports">رياضة</Nav.Link>
-               <Nav.Link as={Link} to="/register">فن</Nav.Link>
-              <Nav.Link as={Link} to="/contact">تعليم</Nav.Link>
-            <Nav.Link as={Link} to="/about">صحة</Nav.Link>
+            </CustomNavDropdown>*/}
+              <Nav.Link as={Link} to="/Sports">رياضة</Nav.Link>
+               <Nav.Link as={Link} to="/Art">فن</Nav.Link>
+              <Nav.Link as={Link} to="/Education">تعليم</Nav.Link>
+            <Nav.Link as={Link} to="/Health">صحة</Nav.Link>
 
 
             <Nav.Link as={Link} to="/">الرئيسية</Nav.Link>

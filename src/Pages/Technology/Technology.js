@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Categorypage from '../../Components/Categorypage';
 
-const Sports = () => {
+const Technology = () => {
     const [news, setNews] = useState({
         loading: true,
         results: [],
@@ -41,4 +41,4 @@ const Sports = () => {
     );
 };
 
-export default Sports;
+export default Technology;

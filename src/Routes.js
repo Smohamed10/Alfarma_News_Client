@@ -6,6 +6,15 @@ import App from "./App";
 import CreatePost from "./Pages/Admin/CreatePost";
 import Articledeatails from "./Components/articledeatails";
 import Sports from "./Pages/Sports/Sports";
+import Accident from "./Pages/Accident/Accident";
+import Art from "./Pages/Art/Art";
+import Economy from "./Pages/Economy/Economy";
+import Education from "./Pages/Education/Education";
+import Governorate from "./Pages/Governorate/Governorate";
+import Health from "./Pages/Health/Health";
+import Petrol from "./Pages/Petrol/Petrol";
+import Technology from "./Pages/Technology/Technology";
+import World from "./Pages/World/World";
 
 export const routes = createBrowserRouter([
     {
@@ -18,28 +27,64 @@ export const routes = createBrowserRouter([
             },
         
             {
-            path: "/login",
+            path: "/Login",
             element: <Login/>,
             },
         
             {
-            path: "/register",
+            path: "/Register",
             element: <Register/>,
             },
             {
-                path: "/post",
+                path: "/Post",
                 element: <CreatePost/>,
             },
                 
             {
-                path: "details/:id",
+                path: "Articledeatails/:id",
                 element: <Articledeatails/>,
             },
-
             {
-                path: "/sports",
+                path: "/Sports",
                 element: <Sports/>,
             },
+            {
+                path: "/Accident",
+                element: <Accident/>,
+            },
+            {
+                path: "/Art",
+                element: <Art/>,
+            },
+            {
+                path: "/Economy",
+                element: <Economy/>,
+            },
+            {
+                path: "/Education",
+                element: <Education/>,
+            },
+            {
+                path: "/Governorate",
+                element: <Governorate/>,
+            },
+            {
+                path: "/Health",
+                element: <Health/>,
+            },
+            {
+                path: "/Petrol",
+                element: <Petrol/>,
+            },
+            {
+                path: "/Technology",
+                element: <Technology/>,
+            },
+            {
+                path: "/World",
+                element: <World/>,
+            },
+
         ]
     },
     {

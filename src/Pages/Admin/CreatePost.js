@@ -3,9 +3,6 @@ import axios from 'axios';
 import { useNavigate } from "react-router-dom";
 import Dropdown from 'react-bootstrap/Dropdown'; 
 import { getAuthUser } from '../../Helper/Storage';
-import 'react-time-picker/dist/TimePicker.css';
-import 'react-clock/dist/Clock.css';
-import "react-datepicker/dist/react-datepicker.css";
 import "./spinner.css";
 
 const Auth = getAuthUser();
