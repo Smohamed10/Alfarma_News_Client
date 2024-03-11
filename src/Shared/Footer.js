@@ -95,13 +95,16 @@ const Footer = () => {
                             <h2 className="widget-title">Popular Categories</h2>
                             <div className="link-widget">
                                 <ul>
-                                    <li><a href=" ">Fahsion <span>(21)</span></a></li>
-                                    <li><a href=" ">Lifestyle <span>(15)</span></a></li>
-                                    <li><a href=" ">Art & Design <span>(31)</span></a></li>
-                                    <li><a href=" ">Health Beauty <span>(22)</span></a></li>
-                                    <li><a href=" ">Clothing <span>(66)</span></a></li>
-                                    <li><a href=" ">Entertaintment <span>(11)</span></a></li>
-                                    <li><a href=" ">Food & Drink <span>(87)</span></a></li>
+                                    <li><a href="/Health">(21) <span>صحة</span></a></li>
+                                    <li><a href="/Education">(21) <span>تعليم</span></a></li>
+                                    <li><a href="/Art">(21)<span>فن</span></a></li>
+                                    <li><a href="/Sports"> (21) <span>رياضه</span></a></li>
+                                    <li><a href="/Petrol">(21) <span>بترول</span></a></li>
+                                    <li><a href="/Economy">(21) <span>اقتصاد</span></a></li>
+                                    <li><a href="/Governorate">(21)<span>محافظات</span></a></li>
+                                    <li><a href="/Accident">(21)<span>حوادث</span></a></li>
+                                    <li><a href="/World">(21)<span>عالم</span></a></li>
+                                    <li><a href="/Technology">(21)<span>تكنولوجيا</span></a></li>
                                 </ul>
                             </div>
                         </div>

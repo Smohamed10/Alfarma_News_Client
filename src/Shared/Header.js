@@ -64,7 +64,7 @@ const Header = () => {
 
         <div>
       <Navbar bg="light" expand="lg">
-      {Auth && <Nav.Link onClick={Logout} className='btn btn-sm btn-danger mx-2'>تسجيل الخروج</Nav.Link>}
+      {Auth && <Nav.Link onClick={Logout} className='btn btn-sm btn-danger mx-2 nav-link fixed-top'>تسجيل الخروج</Nav.Link>}
 
         <Container>
 

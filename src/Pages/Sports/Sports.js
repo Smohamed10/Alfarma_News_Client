@@ -20,7 +20,6 @@ const Sports = () => {
         )
           .then((resp) => {
             setNews((prevState) => ({ ...prevState, results: resp.data, loading: false, err: null }));
-            console.log(resp)
           })
           .catch(() => {
             setNews((prevState) => ({ ...prevState, loading: false, err: 'Something Went Wrong' }));

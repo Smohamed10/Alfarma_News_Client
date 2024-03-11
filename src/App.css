@@ -136,7 +136,7 @@ a {
 .header {
   padding: 0.4rem 0;
   position: relative;
-  background: url(images/header_bg_v2.jpg) repeat-x center  #ffffff;
+  background: url(images/header_bg_v2.jpg) repeat-y center  #ffffff;
 
 }
 
@@ -859,7 +859,7 @@ div.tab button:hover {
 **************************************/
 
 .footer .widget-title {
-  display: table;
+  display: block;
   font-size: 18px;
   line-height: 1;
   margin: 0 0 2rem;
@@ -868,7 +868,7 @@ div.tab button:hover {
 
 .footer {
   padding: 4rem 0 4rem;
-  background: url(images/footer.png) repeat-x center bottom #edeff2;
+  background: url(images/foooter\ -\ Copy.jpg) repeat-x center  #edeff2;
 }
 
 .footer.wb {
@@ -1241,7 +1241,9 @@ div.tab button:hover {
 }
 
 .comments-list p {
-  margin-bottom: 1rem
+  margin-bottom: 1rem;
+  word-wrap: break-word;
+  text-align: right;
 }
 
 .tag-cloud-single a,
@@ -1488,7 +1490,7 @@ hr.invis3 {
   padding: 1rem;
 }
 
-.hovereffect {
+/*.hovereffect {
   position: absolute;
   top: 0;
   opacity: 0;
@@ -1509,10 +1511,10 @@ hr.invis3 {
   background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 50%);
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000', GradientType=1);
 }
-
+*/
+/*
 .post-media:hover .hovereffect span::before,
 .post-media:hover .hovereffect {
-  visibility: visible;
   zoom: 1;
   filter: alpha(opacity=100);
   opacity: 1;
@@ -1548,7 +1550,7 @@ hr.invis3 {
 .hovereffect span.videohover::before {
   content: url(images/videohover.png);
 }
-
+*/
 .blog-list .blog-meta.big-meta h4 {
   margin-left: 0%;
   margin-top: 1rem;

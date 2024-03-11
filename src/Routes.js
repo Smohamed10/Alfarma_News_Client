@@ -41,7 +41,7 @@ export const routes = createBrowserRouter([
             },
                 
             {
-                path: "Articledeatails/:id",
+                path: "/Articledeatails/:id",
                 element: <Articledeatails/>,
             },
             {
