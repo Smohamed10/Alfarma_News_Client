@@ -34,18 +34,19 @@ const Articledeatails = () => {
                     <div className="col-lg-12">
                         <div className="page-wrapper">
                         <div className="pp">
-                                <h3><strong>{postData && postData.name}</strong></h3></div>
+                                <h3 style={{marginBottom:'1rem'}}><strong>{postData && postData.name}</strong></h3></div>
+                                <div className="pp">
+                                <h3 style={{color:'blue'}}>{postData && postData.category}</h3>
+                                <h5><small> بقلم \ {postData && postData.writer_name}</small></h5>
+                            </div>
                             <div className='banner-img'>
                         <img
     src={postData && postData.pic_path}
     alt=""
     className="img-fluid"
-    style={{ maxWidth: '1000px', maxHeight: '1000px' }} // Adjust maxWidth and maxHeight as needed
+    style={{ maxWidth: '100%', maxHeight: '100%',marginBottom:'2rem' }} // Adjust maxWidth and maxHeight as needed
 /></div>
-                            <div className="pp">
-                                <h3><strong>{postData && postData.category}</strong></h3>
-                                <h5><small> بقلم \ {postData && postData.writer_name}</small></h5>
-                            </div>
+
 
                             <div className="pp" style={{ whiteSpace: 'pre-line' ,fontfamily: 'Droid Arabic Naskh',   fontsize:'25px'}}>
     <p><strong>{postData && decodeURIComponent(postData.content)}</strong></p>

@@ -3,6 +3,7 @@ import logo_vid from"../images/footer_logo.png";
 import { Navbar, Nav, Container ,NavDropdown,Button} from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
 import { removeAuthUser, getAuthUser } from '../Helper/Storage';
+import Breakingnews from '../Components/Breakingnews';
 const CustomNavDropdown = ({ title, children, id }) => {
     return (
         <NavDropdown title={title} id={id}>
@@ -127,6 +128,15 @@ const Header = () => {
         </Container>
       </Navbar>
     </div>
+    <div id="breaking-news-container">
+  <div id="breaking-news-colour" class="slideup animated">
+    
+  </div>  
+   <span class="breaking-news-title delay-animated slidein">
+   آخر الأخبار
+    </span> 
+<Breakingnews/>
+</div>  
 </div>
 </div>
 

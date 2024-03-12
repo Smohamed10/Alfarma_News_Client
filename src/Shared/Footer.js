@@ -1,6 +1,7 @@
 import React from 'react';
-import blog_square_01 from "../upload/blog_square_01.jpg"
 import footer_logo from"../images/footer_logo.png"
+import Recentposts from '../Components/Recentposts';
+import Popularfooter from '../Components/Popularfooter';
 const Footer = () => {
     return (
         <footer className="footer">
@@ -11,29 +12,7 @@ const Footer = () => {
                             <h2 className="widget-title">Recent Posts</h2>
                             <div className="blog-list-widget">
                                 <div className="list-group">
-                                    <a href="single.html" className="list-group-item list-group-item-action flex-column align-items-start">
-                                        <div className="w-100 justify-content-between">
-                                            <img src={blog_square_01} alt="" className="img-fluid float-left"/>
-                                            <h5 className="mb-1">5 Beautiful buildings you need to before dying</h5>
-                                            <small>12 Jan, 2016</small>
-                                        </div>
-                                    </a>
-
-                                    <a href="single.html" className="list-group-item list-group-item-action flex-column align-items-start">
-                                        <div className="w-100 justify-content-between">
-                                            <img src={blog_square_01} alt="" className="img-fluid float-left"/>
-                                            <h5 className="mb-1">Let's make an introduction for creative life</h5>
-                                            <small>11 Jan, 2016</small>
-                                        </div>
-                                    </a>
-
-                                    <a href="single.html" className="list-group-item list-group-item-action flex-column align-items-start">
-                                        <div className="w-100 last-item justify-content-between">
-                                            <img src={blog_square_01} alt="" className="img-fluid float-left"/>
-                                            <h5 className="mb-1">Did you see the most beautiful sea in the world?</h5>
-                                            <small>07 Jan, 2016</small>
-                                        </div>
-                                    </a>
+                                <Recentposts/>
                                 </div>
                             </div>
                         </div>
@@ -44,47 +23,7 @@ const Footer = () => {
                             <h2 className="widget-title">Popular Posts</h2>
                             <div className="blog-list-widget">
                                 <div className="list-group">
-                                    <a href="single.html" className="list-group-item list-group-item-action flex-column align-items-start">
-                                        <div className="w-100 justify-content-between">
-                                            <img src={blog_square_01} alt="" className="img-fluid float-left"/>
-                                            <h5 className="mb-1">Banana-chip chocolate cake recipe with customs</h5>
-                                            <span className="rating">
-                                                <i className="fa fa-star"></i>
-                                                <i className="fa fa-star"></i>
-                                                <i className="fa fa-star"></i>
-                                                <i className="fa fa-star"></i>
-                                                <i className="fa fa-star"></i>
-                                            </span>
-                                        </div>
-                                    </a>
-
-                                    <a href="single.html" className="list-group-item list-group-item-action flex-column align-items-start">
-                                        <div className="w-100 justify-content-between">
-                                            <img src={blog_square_01} alt="" className="img-fluid float-left"/>
-                                            <h5 className="mb-1">10 practical ways to choose organic vegetables</h5>
-                                            <span className="rating">
-                                                <i className="fa fa-star"></i>
-                                                <i className="fa fa-star"></i>
-                                                <i className="fa fa-star"></i>
-                                                <i className="fa fa-star"></i>
-                                                <i className="fa fa-star"></i>
-                                            </span>
-                                        </div>
-                                    </a>
-
-                                    <a href="single.html" className="list-group-item list-group-item-action flex-column align-items-start">
-                                        <div className="w-100 last-item justify-content-between">
-                                            <img src={blog_square_01} alt="" className="img-fluid float-left"/>
-                                            <h5 className="mb-1">We are making homemade ravioli, nice and good</h5>
-                                            <span className="rating">
-                                                <i className="fa fa-star"></i>
-                                                <i className="fa fa-star"></i>
-                                                <i className="fa fa-star"></i>
-                                                <i className="fa fa-star"></i>
-                                                <i className="fa fa-star"></i>
-                                            </span>
-                                        </div>
-                                    </a>
+<Popularfooter/>
                                 </div>
                             </div>
                         </div>
