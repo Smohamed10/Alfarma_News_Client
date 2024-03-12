@@ -1,18 +1,41 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
-const Ad = () => {
+const Ad = (props) => {
+    console.log(props.category)
+    const [ads, setads] = useState({
+        loading: true,
+        results: [],
+        err: null,
+        reload: "0"
+    });
+  
+    useEffect(() => {
+      setads((prevState) => ({ ...prevState, loading: true }));
+      axios.get("http://localhost:4004/getallads", {
+        params: {
+            catname: props.category // Pass selected option as query parameter
+        }
+    })
+        .then((resp) => {
+          setads((prevState) => ({ ...prevState, results: resp.data, loading: false, err: null }));
+          console.log(resp)
+        })
+        .catch(() => {
+          setads((prevState) => ({ ...prevState, loading: false, err: 'Something Went Wrong' }));
+        });
+    }, [props]);
     return (
-        <div className="row">
-        <div className="col-lg-10 offset-lg-1">
-            <div className="banner-spot clearfix">
-                <div className="banner-img">
-                    <img src={""} alt="" className="img-fluid"/>
-                </div> 
-            </div> 
-        </div> 
-    </div> 
-
+    <div style={{textAlign:'center'}}>
+        {ads.results.map((item,index) => (
+            <>
+        <img src={item.ads_img}  alt="" className="img-fluid"/>
+        <a href={item.description}>{item.name}</a>
+            </>
+            ))}
+    </div>
     );
+
 };
 
 export default Ad;

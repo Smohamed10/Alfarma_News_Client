@@ -8,7 +8,7 @@ import "./spinner.css";
 const Auth = getAuthUser();
 let public_id="";
 
-const CreatePost = () => {
+const Postad = () => {
     const [image, setImage] = useState(null);
     const [loading, setLoading] = useState(false);
     const [preview, setPreview] = useState(null);
@@ -27,7 +27,7 @@ const CreatePost = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (!selectedCategory) {
-            alert('اختر الفئة');
+            alert('اختر مكان الاعلان ');
             return;
         }
         setPost({ ...Post, loading: true, err: [] });
@@ -35,13 +35,11 @@ const CreatePost = () => {
             const imageUrl = await uploadImage(); // Wait for image upload to complete
 
             if (imageUrl) {
-                const response = await axios.post("http://localhost:4004/creatnews/", {
-                    pic_path: imageUrl,
+                const response = await axios.post("http://localhost:4004/createads", {
+                    ads_img: imageUrl,
                     name: Post.name,
-                    writer_name: Auth[0].name,
-                    content: encodeURIComponent(Post.description),
-                    category: selectedCategory,// Include selected category in Axios request
-                    publicID: public_id
+                    description: Post.description,
+                    ad_category: selectedCategory,// Include selected category in Axios request
                 }, {
                     headers: {
                         token: Auth[0].token,
@@ -102,25 +100,26 @@ const CreatePost = () => {
 
     return (
         <section className="section">
-            <div className="container" style={{textAlign:'right'}}>
+            <div className="container">
                 <div className="row">
                     <div className="col-lg-12">
                         <div className="page-wrapper">
                             <form onSubmit={handleSubmit} action="#" className="p-5 bg-white">
                                 <div className="row form-group">
                                     <div className="col-md-12 mb-3 mb-md-0">
-                                        <label className="text-black" htmlFor="fname">عنوان الخبر</label>
+                                        <label className="text-black" htmlFor="fname">اسم الشركة </label>
                                         <input required type="text" id="fname" className="form-control" value={Post.name} onChange={(e) => setPost({ ...Post, name: e.target.value })} />
                                     </div>
                                 </div>
                                 <div className="row form-group">
                                     <div className="col-md-12">
-                                        <label className="text-black" htmlFor="category">نوع الخبر</label>
+                                        <label className="text-black" htmlFor="category">مكان نشر الاعلان</label>
                                         <Dropdown >
                                             <Dropdown.Toggle className="col-md-12 mb-3 mb-md-0" variant="primary" id="dropdown-basic">
                                                 {selectedCategory || "اختر الفئة"}
                                             </Dropdown.Toggle>
                                             <Dropdown.Menu>
+                                                <Dropdown.Item onClick={() => setSelectedCategory("الرئيسية")}>الرئيسية</Dropdown.Item>
                                                 <Dropdown.Item onClick={() => setSelectedCategory("صحة")}>صحة</Dropdown.Item>
                                                 <Dropdown.Item onClick={() => setSelectedCategory("تعليم")}>تعليم </Dropdown.Item>
                                                 <Dropdown.Item onClick={() => setSelectedCategory("رياضة")}> رياضة</Dropdown.Item>
@@ -137,20 +136,20 @@ const CreatePost = () => {
                                 </div>
                                 <div className="row form-group">
                                     <div className="col-md-12">
-                                        <label className="text-black" htmlFor="Description">تفاصيل الخبر</label>
-                                        <textarea required value={Post.description} dir="rtl" onChange={(e) => setPost({ ...Post, description: e.target.value })} name="message" id="message" cols="70" rows="7" className="form-control" placeholder="اكتب تفاصيل الخبر هنا"></textarea>
+                                        <label className="text-black" htmlFor="Description">لينك الاعلان</label>
+                                        <input required type="url" id="linkField" className="form-control" value={Post.description} onChange={(e) => setPost({ ...Post, description: e.target.value })} pattern="https?://.+" placeholder="اكتب لينك الاعلان هنا"/>
                                     </div>
                                 </div>
                                 <div className="row form-group">
                                     <div className="col-md-12">
-                                        <label className="text-black" htmlFor="subject">اختر صورة الخبر</label>
+                                        <label className="text-black" htmlFor="subject">اختر صورة الاعلان</label>
                                         <input required id="subject" type="file" className="form-control" onChange={handleImageChange} accept="image/*" />
                                         {preview && <img src={preview} alt="preview" className="img-fluid rounded" />}
                                     </div>
                                 </div>
                                 <div className="row form-group">
                                     <div className="col-md-12">
-                                        <input disabled={!image} type="submit" value="نشر الخبر" className="btn btn-primary py-2 px-4 text-white" />
+                                        <input disabled={!image} type="submit" value="نشر الاعلان" className="btn btn-primary py-2 px-4 text-white" />
                                     </div>
                                 </div>
                                 <div className="row form-group">
@@ -176,4 +175,4 @@ const CreatePost = () => {
     );
 };
 
-export default CreatePost;
+export default Postad;

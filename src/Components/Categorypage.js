@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Recentposts from './Recentposts';
+import Ad from './Ad';
 
 
 function truncateText(text, sentences) {
@@ -62,37 +63,21 @@ const Categorypage = (props) => {
 
                             <div className="widget">
                                 <h2 className="widget-title">Advertising</h2>
-                                <div className="banner-spot clearfix">
                                     <div className="banner-img">
-                                        <img src="https://res.cloudinary.com/dyeqmtxsd/image/upload/v1710081277/87933670_ghti_10_pasal2.jpg" alt="" className="img-fluid"/>
-                                    </div>
+                                    <Ad category={props.news.results.length > 0 ? props.news.results[0].category : ""} />
                                 </div>
                             </div>
 
-                            <div className="widget">
-                                <h2 className="widget-title">Instagram Feed</h2>
-                                <div className="instagram-wrapper clearfix">
-                                    <a className="" href=" "><img src="https://res.cloudinary.com/dyeqmtxsd/image/upload/v1710081277/87933670_ghti_10_pasal2.jpg" alt="" className="img-fluid"/></a>
-                                    <a href=" "><img src="https://res.cloudinary.com/dyeqmtxsd/image/upload/v1710081277/87933670_ghti_10_pasal2.jpg" alt="" className="img-fluid"/></a>
-                                    <a href=" "><img src="https://res.cloudinary.com/dyeqmtxsd/image/upload/v1710081277/87933670_ghti_10_pasal2.jpg" alt="" className="img-fluid"/></a>
-                                    <a href=" "><img src="https://res.cloudinary.com/dyeqmtxsd/image/upload/v1710081277/87933670_ghti_10_pasal2.jpg" alt="" className="img-fluid"/></a>
-                                    <a href=" "><img src="https://res.cloudinary.com/dyeqmtxsd/image/upload/v1710081277/87933670_ghti_10_pasal2.jpg" alt="" className="img-fluid"/></a>
-                                    <a href=" "><img src="https://res.cloudinary.com/dyeqmtxsd/image/upload/v1710081277/87933670_ghti_10_pasal2.jpg" alt="" className="img-fluid"/></a>
-                                    <a href=" "><img src="https://res.cloudinary.com/dyeqmtxsd/image/upload/v1710081277/87933670_ghti_10_pasal2.jpg" alt="" className="img-fluid"/></a>
-                                    <a href=" "><img src="https://res.cloudinary.com/dyeqmtxsd/image/upload/v1710081277/87933670_ghti_10_pasal2.jpg" alt="" className="img-fluid"/></a>
-                                    <a href=" "><img src="https://res.cloudinary.com/dyeqmtxsd/image/upload/v1710081277/87933670_ghti_10_pasal2.jpg" alt="" className="img-fluid"/></a>
-                                </div>
-                            </div>
 
-                            <div className="widget">
+                            <div style={{justifyContent:'center'}} className="widget">
                                 <h2 className="widget-title">Popular Categories</h2>
                                 <div className="link-widget">
                                 <ul>
-                                    <li><a href="/Health">(21) <span>صحة</span></a></li>
-                                    <li><a href="/Education">(21) <span>تعليم</span></a></li>
-                                    <li><a href="/Art">(21)<span>فن</span></a></li>
-                                    <li><a href="/Sports"> (21) <span>رياضه</span></a></li>
-                                    <li><a href="/Petrol">(21) <span>بترول</span></a></li>
+                                    <li><a href="/Health">&nbsp; <span>صحة</span></a></li>
+                                    <li><a href="/Education">&nbsp; <span>تعليم</span></a></li>
+                                    <li><a href="/Art">&nbsp;<span>فن</span></a></li>
+                                    <li><a href="/Sports"> &nbsp; <span>رياضه</span></a></li>
+                                    <li><a href="/Petrol">&nbsp; <span>بترول</span></a></li>
                                 </ul>
                                 </div>
                             </div>

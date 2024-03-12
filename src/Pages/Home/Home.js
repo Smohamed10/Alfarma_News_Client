@@ -3,6 +3,7 @@ import axios from 'axios';
 import PopularNews from '../../Components/Popularnews';
 import Rightnews from '../../Components/Rightnews';
 import Leftnews from '../../Components/Leftnews';
+import Ad from '../../Components/Ad';
 
 const categories = ["رياضة", "فن", "تكنولوجيا", "اقتصاد", "بترول", "عالم", "صحة", "محافظات", "تعليم", "حوادث"];
 
@@ -76,8 +77,15 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-            </section>
-        </div>
+            </section>  
+            <div className="row">
+        <div className="col-lg-10 offset-lg-1">
+                <div className="banner-img">       
+                <Ad category="الرئيسية" />
+            </div>
+                    </div>
+                </div>
+        </div>            
     );
 };
 

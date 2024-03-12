@@ -1372,6 +1372,7 @@ background-image: url(./images/3d-background-with-white-cubes.jpg);
   width: 100%;
   display: block;
   margin-top: 5rem;
+  max-height: 7rem;
 }
 
 .blog-meta h4 {

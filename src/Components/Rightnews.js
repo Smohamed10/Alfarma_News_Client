@@ -8,12 +8,12 @@ const Rightnews = (props) => {
             <>
 
             <div className="section-title" key={index}>
-                <h3 className="color-red"><a href="blog-category-01.html" >{item.category}</a></h3>
+                <h3 className="color-red"><a href={`/Articledeatails/${item.id}`} >{item.category}</a></h3>
             </div> 
     
             <div className="blog-box">
                 <div className="post-media">
-                    <a href="single.html" title={item.name}>
+                    <a href={`/Articledeatails/${item.id}`} title={item.name}>
                         <img src={item.pic_path} alt="" className="img-fluid"/>
                         <div className="hovereffect">
                             <span className="videohover"></span>
@@ -21,9 +21,9 @@ const Rightnews = (props) => {
                     </a>
                 </div> 
                 <div className="blog-meta">
-                    <h4><a href="single.html" title="">{item.name}</a></h4>
-                    <small><a href="blog-category-01.html" title="">{item.category}</a></small>
-                    <small><a href="blog-category-01.html" title="">{item.time}</a></small>
+                    <h4><a href={`/Articledeatails/${item.id}`} title="">{item.name}</a></h4>
+                    <small><a href={`/Articledeatails/${item.id}`} title="">{item.category}</a></small>
+                    <small><a href={`/Articledeatails/${item.id}`} title="">{item.time}</a></small>
                 </div> 
             </div> 
             <hr className="invis"/>

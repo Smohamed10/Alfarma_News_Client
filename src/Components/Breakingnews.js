@@ -25,7 +25,7 @@ const Breakingnews = () => {
     };
     return (
         <div>
-        <a href='/' className="breaking-news-headline delay-animated2 fadein marquee" dangerouslySetInnerHTML={{ __html: concatenateBreakingNews() }} />
+        <p  className="breaking-news-headline delay-animated2 fadein marquee" dangerouslySetInnerHTML={{ __html: concatenateBreakingNews() }} />
     </div>
     );
 };

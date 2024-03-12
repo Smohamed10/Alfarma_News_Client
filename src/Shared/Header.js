@@ -29,17 +29,6 @@ const Header = () => {
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-lg-4 col-md-6 col-sm-6 hidden-xs-down">
-                        <div className="topsocial">
-                            <a href="https://www.facebook.com/share/ad4yX2ao2QedpxKL/?mibextid=qi2Omg" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i className="fa fa-facebook"></i></a>
-                            <a href="https://wa.me/01067554142" data-toggle="tooltip" data-placement="bottom" title="Whatsapp"><i className="fa fa-whatsapp"></i></a>
-                            <a href="https://www.instagram.com/elfaramanews?igsh=MXAyZ25oeDNqYnkyZQ==" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i className="fa fa-instagram"></i></a>
-                            {/*                            <a href=" " data-toggle="tooltip" data-placement="bottom" title="Youtube"><i className="fa fa-youtube"></i></a>
-                            <a href=" " data-toggle="tooltip" data-placement="bottom" title="Pinterest"><i className="fa fa-pinterest"></i></a>
-                            <a href=" " data-toggle="tooltip" data-placement="bottom" title="Twitter"><i className="fa fa-twitter"></i></a>
-                            <a href=" " data-toggle="tooltip" data-placement="bottom" title="Flickr"><i className="fa fa-flickr"></i></a>
-                            <a href=" " data-toggle="tooltip" data-placement="bottom" title="Google+"><i className="fa fa-google-plus"></i></a>*/}
-                            
-                        </div>
                     </div>
 
                     <div className="col-lg-4 hidden-md-down">
@@ -62,6 +51,12 @@ const Header = () => {
     </Link>
 ) : (
     <>
+        <Link to="/postad">
+            {/* Use transparent text and border color to make the button invisible */}
+            <Button variant="warning" type="submit" style={{ color: 'white', border: 'none', backgroundColor: 'black', width: '200px', height: '50px', padding: '0', margin: '0', overflow: 'hidden' }}>
+                نشر اعلان
+            </Button>
+        </Link>
         <Link to="/login">
             {/* Use transparent text and border color to make the button invisible */}
             <Button variant="warning" type="submit" style={{ color: 'black', border: 'none', backgroundColor: 'gold', width: '200px', height: '50px', padding: '0', margin: '0', overflow: 'hidden' }}>

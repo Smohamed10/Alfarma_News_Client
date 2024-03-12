@@ -34,16 +34,16 @@ const Footer = () => {
                             <h2 className="widget-title">Popular Categories</h2>
                             <div className="link-widget">
                                 <ul>
-                                    <li><a href="/Health">(21) <span>صحة</span></a></li>
-                                    <li><a href="/Education">(21) <span>تعليم</span></a></li>
-                                    <li><a href="/Art">(21)<span>فن</span></a></li>
-                                    <li><a href="/Sports"> (21) <span>رياضه</span></a></li>
-                                    <li><a href="/Petrol">(21) <span>بترول</span></a></li>
-                                    <li><a href="/Economy">(21) <span>اقتصاد</span></a></li>
-                                    <li><a href="/Governorate">(21)<span>محافظات</span></a></li>
-                                    <li><a href="/Accident">(21)<span>حوادث</span></a></li>
-                                    <li><a href="/World">(21)<span>عالم</span></a></li>
-                                    <li><a href="/Technology">(21)<span>تكنولوجيا</span></a></li>
+                                    <li><a href="/Health">&nbsp; <span>صحة</span></a></li>
+                                    <li><a href="/Education">&nbsp; <span>تعليم</span></a></li>
+                                    <li><a href="/Art">&nbsp;<span>فن</span></a></li>
+                                    <li><a href="/Sports"> &nbsp; <span>رياضه</span></a></li>
+                                    <li><a href="/Petrol">&nbsp; <span>بترول</span></a></li>
+                                    <li><a href="/Economy">&nbsp; <span>اقتصاد</span></a></li>
+                                    <li><a href="/Governorate">&nbsp;<span>محافظات</span></a></li>
+                                    <li><a href="/Accident">&nbsp;<span>حوادث</span></a></li>
+                                    <li><a href="/World">&nbsp;<span>عالم</span></a></li>
+                                    <li><a href="/Technology">&nbsp;<span>تكنولوجيا</span></a></li>
                                 </ul>
                             </div>
                         </div>

@@ -16,6 +16,7 @@ import Petrol from "./Pages/Petrol/Petrol";
 import Technology from "./Pages/Technology/Technology";
 import World from "./Pages/World/World";
 import Contact from "./Pages/Contact/Contact";
+import Postad from "./Pages/Admin/Postad";
 
 export const routes = createBrowserRouter([
     {
@@ -31,7 +32,10 @@ export const routes = createBrowserRouter([
             path: "/Login",
             element: <Login/>,
             },
-        
+            {
+            path:"/postad",
+            element:<Postad/>
+            },
             {
             path: "/Register",
             element: <Register/>,
