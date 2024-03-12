@@ -34,7 +34,7 @@ const CreatePost = () => {
                     pic_path: imageUrl,
                     name: Post.name,
                     writer_name: Auth[0].name,
-                    content: Post.description,
+                    content: encodeURIComponent(Post.description),
                     category: selectedCategory,// Include selected category in Axios request
                     publicID: public_id
                 }, {
@@ -111,8 +111,8 @@ const CreatePost = () => {
                                 <div className="row form-group">
                                     <div className="col-md-12">
                                         <label className="text-black" htmlFor="category">نوع الخبر</label>
-                                        <Dropdown>
-                                            <Dropdown.Toggle variant="primary" id="dropdown-basic">
+                                        <Dropdown >
+                                            <Dropdown.Toggle className="col-md-12 mb-3 mb-md-0" variant="primary" id="dropdown-basic">
                                                 {selectedCategory}
                                             </Dropdown.Toggle>
                                             <Dropdown.Menu>

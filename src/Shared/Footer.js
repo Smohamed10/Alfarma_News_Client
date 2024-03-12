@@ -121,7 +121,7 @@ const Footer = () => {
                                 <p>ابقى على اطلاع دائم مع ! الفرما يقدم هذا الموقع الإلكتروني المصري المميز تغطية شاملة للأخبار المحلية والعالمية على مدار الساعة. ستجد آخر المستجدات على الساحة المصرية، بالإضافة إلى تحليل للقضايا العالمية المهمة التي تؤثر على المنطقة والعالم. يلتزم فريق عمل الفرما بالدقة والموضوعية في عرضه للأنباء، مع توفير محتوى متنوع يلبي اهتمامات القراء المختلفة.</p>
                                 <div className="social">
                                     <a href="https://www.facebook.com/share/ad4yX2ao2QedpxKL/?mibextid=qi2Omg" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i className="fa fa-facebook"></i></a>              
-                                    <a href="https://wa.me/01067554142" data-toggle="tooltip" data-placement="bottom" title="Whatsapp"><i className="fa fa-whatsapp"></i></a>
+                                    <a href="https://wa.me/+2001067554142" data-toggle="tooltip" data-placement="bottom" title="Whatsapp"><i className="fa fa-whatsapp"></i></a>
                                     <a href="https://www.instagram.com/elfaramanews?igsh=MXAyZ25oeDNqYnkyZQ==" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i className="fa fa-instagram"></i></a>
                                 </div>
 

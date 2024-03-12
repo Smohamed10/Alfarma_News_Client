@@ -47,9 +47,9 @@ const Articledeatails = () => {
                                 <h5><small> بقلم \ {postData && postData.writer_name}</small></h5>
                             </div>
 
-                            <div className="pp">
-                                <p><strong>{postData && postData.content}</strong></p>
-                            </div>
+                            <div className="pp" style={{ whiteSpace: 'pre-line' ,fontfamily: 'Droid Arabic Naskh',   fontsize:'25px'}}>
+    <p><strong>{postData && decodeURIComponent(postData.content)}</strong></p>
+</div>
 
                             <div className="custombox clearfix">
                                 <h4 className="small-title"> التعليقات</h4>

@@ -11,21 +11,20 @@ const Accident = () => {
     });
   
     useEffect(() => {
-        setNews((prevState) => ({ ...prevState, loading: true }));
-        axios.get("http://localhost:4004/getallnews",{
-          //params: {
-            //category: "All" // Pass selected option as query parameter
-          //}
+      setNews((prevState) => ({ ...prevState, loading: true }));
+      axios.get("http://localhost:4004/catget", {
+        params: {
+            catName: "حوادث" // Pass selected option as query parameter
         }
-        )
-          .then((resp) => {
-            setNews((prevState) => ({ ...prevState, results: resp.data, loading: false, err: null }));
-          })
-          .catch(() => {
-            setNews((prevState) => ({ ...prevState, loading: false, err: 'Something Went Wrong' }));
-          });
-      }, []);
-
+    })
+        .then((resp) => {
+          setNews((prevState) => ({ ...prevState, results: resp.data, loading: false, err: null }));
+          console.log(resp)
+        })
+        .catch(() => {
+          setNews((prevState) => ({ ...prevState, loading: false, err: 'Something Went Wrong' }));
+        });
+    }, []);
     return (    
         <div>
             <Categorypage news={news} />

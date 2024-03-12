@@ -1,6 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
+function truncateText(text, sentences) {
+    const sentenceArray = text.split('.'); // Assuming sentences end with a period.
+    const truncatedText = sentenceArray.slice(0, sentences).join('.');
+    return truncatedText;
+}
 const Categorypage = (props) => {
     return (
         <div>
@@ -16,27 +22,28 @@ const Categorypage = (props) => {
                                 <hr className="invis"/>
                                 <div className="blog-grid-system">
                                     <div className="row">
-                                        {props.news.results.map((item, index) => (
-                                            <div className="col-md-6" key={index}>
-                                                <div className="blog-box">
-                                                    <div className="post-media">
-                                                        <Link to={`/Articledeatails/${item.id}`} className="header r-flex justify-content-between mb-5">
-                                                            <img src={item.pic_path} alt="" className="img-fluid" style={{ width: '100%', height: '400px', objectFit: 'cover' }}/>
-                                                            <div className="hovereffect">
-                                                                <span></span>
-                                                            </div>
-                                                        </Link>
-                                                    </div>
-                                                    <div className="blog-meta big-meta">
-                                                        <h4><Link to={`/Articledeatails/${item.id}`} title="">{item.name}</Link></h4>
-                                                        <p>{item.content}</p>
-                                                        <small><a href="blog-category-01.html" title="">{item.category}</a></small>
-                                                        <small><a href="single.html" title="">{item.time}</a></small>
-                                                        <small><a href="blog-author.html" title="">بقلم : {item.writer_name}</a></small>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        ))}
+                                    {props.news.results.slice().reverse().map((item, index) => (
+    <div className="col-md-6" key={index}>
+        <div className="blog-box">
+            <div className="post-media">
+                <Link to={`/Articledeatails/${item.id}`} className="header r-flex justify-content-between mb-5">
+                    <img src={item.pic_path} alt="" className="img-fluid" style={{ width: '100%', height: '400px', objectFit: 'cover' }}/>
+                    <div className="hovereffect">
+                        <span></span>
+                    </div>
+                </Link>
+            </div>
+            <div className="blog-meta big-meta">
+                <h4><Link to={`/Articledeatails/${item.id}`} title="">{item.name}</Link></h4>
+                <p>{truncateText(decodeURIComponent(item.content), 1)}</p> {/* Truncate to 2 sentences */}
+                <p>....</p> {/* Truncate to 2 sentences */}
+                <small><a href="blog-category-01.html" title="">{item.category}</a></small>
+                <small><a href="single.html" title="">{item.time}</a></small>
+                <small><a href="blog-author.html" title="">بقلم : {item.writer_name}</a></small>
+            </div>
+        </div>
+    </div>
+))}
                                     </div>
                                 </div>
                             </div>

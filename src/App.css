@@ -136,7 +136,6 @@ a {
 .header {
   padding: 0.4rem 0;
   position: relative;
-  background: url(images/header_bg_v2.jpg) repeat-y center  #ffffff;
 
 }
 
@@ -676,6 +675,7 @@ div.tab button:hover {
   display: block;
   position: relative;
   background-color: #ffffff;
+  font-family: cursive;
 }
 
 .section.lb {
@@ -1371,6 +1371,7 @@ div.tab button:hover {
   float: none;
   width: 100%;
   display: block;
+  margin-top: 5rem;
 }
 
 .blog-meta h4 {

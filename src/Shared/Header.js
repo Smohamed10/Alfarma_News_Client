@@ -44,19 +44,38 @@ const Header = () => {
                     <div className="col-lg-4 hidden-md-down">
                         <div className="topmenu text-center">
                             <ul className="list-inline">
-                                <li className="list-inline-item"><a href="blog-category-01.html"><i className="fa fa-star"></i> Trends</a></li>
-                                <li className="list-inline-item"><a href="blog-category-02.html"><i className="fa fa-bolt"></i> الأكثر رواجا</a></li>
-                                <li className="list-inline-item"><a href="/Contact"><i className="fa fa-user-circle-o"></i> تواصل معنا</a></li>
+                            <a href="https://www.facebook.com/share/ad4yX2ao2QedpxKL/?mibextid=qi2Omg" data-toggle="tooltip" data-placement="bottom" title="Facebook"><i className="fa fa-facebook"></i></a>
+                            <a href="https://wa.me/+2001067554142" data-toggle="tooltip" data-placement="bottom" title="Whatsapp"><i className="fa fa-whatsapp"></i></a>
+                            <a  href="https://www.instagram.com/elfaramanews?igsh=MXAyZ25oeDNqYnkyZQ==" data-toggle="tooltip" data-placement="bottom" title="Instagram"><i className="fa fa-instagram"></i></a>
+                                <li style={{ marginLeft:'1rem' }} className="list-inline-item"><a href="/Contact"><i className="fa fa-address-card-o"></i> تواصل معنا</a></li>
                             </ul>
                         </div>
                     </div>
 
-                    <div className="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+                    <div className="col-lg-4 col-md-6 col-sm-12 col-xs-12">
                         <div className="topsearch text-right">
-                        <Link to="/login">
+                        {!Auth ? (
+    <Link to="/login">
+        {/* Use transparent text and border color to make the button invisible */}
+        <Button variant="warning" type="submit" style={{ color: 'transparent', border: 'none', backgroundColor: 'transparent', width: '80px', height: '50px', padding: '0', margin: '0', overflow: 'hidden' }} />
+    </Link>
+) : (
+    <>
+        <Link to="/login">
             {/* Use transparent text and border color to make the button invisible */}
-            <Button variant="warning" type="submit" style={{ color: 'transparent', border: 'none', backgroundColor: 'transparent', width: '50px', height: '40px', padding: '0', margin: '0', overflow: 'hidden' }} />
-        </Link>    
+            <Button variant="warning" type="submit" style={{ color: 'black', border: 'none', backgroundColor: 'gold', width: '200px', height: '50px', padding: '0', margin: '0', overflow: 'hidden' }}>
+                صفحة تسجيل الدخول
+            </Button>
+        </Link>
+        <Link to="/post">
+            {/* Use transparent text and border color to make the button invisible */}
+            <Button variant="warning" type="submit" style={{ color: 'white', border: 'none', backgroundColor: 'black', width: '200px', height: '50px', padding: '0', marginRight: '22rem',margin:'0', overflow: 'hidden' }}>
+                نشر خبر
+            </Button>
+        </Link>
+    </>
+)}
+
                         </div>
                     </div>
                 </div>
@@ -66,7 +85,7 @@ const Header = () => {
 
         <div>
       <Navbar bg="light" expand="lg">
-      {Auth && <Nav.Link onClick={Logout} className='btn btn-sm btn-danger mx-2 nav-link fixed-top'>تسجيل الخروج</Nav.Link>}
+      {Auth && <Nav.Link onClick={Logout} className='btn btn-sm btn-danger mx-2 nav-link fixed-top' style={{ right: '80%',borderRadius: '100rem',marginRight: '-2.5rem'}}>تسجيل الخروج</Nav.Link>}
 
         <Container>
 
