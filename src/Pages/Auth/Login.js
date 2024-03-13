@@ -29,7 +29,7 @@ const Login = () => {
     const doLogin = (e) => {
         e.preventDefault();
         setLoginData({ ...loginData, loading: true, err: [] });
-        axios.post("http://localhost:4004/login", {
+        axios.post("https://alfarma-news-server.onrender.com/login", {
             email: loginData.email,
             password: loginData.password,
         }).then(resp => {

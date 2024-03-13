@@ -12,7 +12,7 @@ const Economy = () => {
   
     useEffect(() => {
       setNews((prevState) => ({ ...prevState, loading: true }));
-      axios.get("http://localhost:4004/catget", {
+      axios.get("https://alfarma-news-server.onrender.com/catget", {
         params: {
             catName: "اقتصاد" // Pass selected option as query parameter
         }

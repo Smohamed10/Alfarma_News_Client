@@ -47,7 +47,7 @@ const Register = () => {
 
         // Proceed with registration if Auth is not empty
         setRegister({ ...register, loading: true, err: [] });
-        axios.post("http://localhost:4004/createadmin", {
+        axios.post("https://alfarma-news-server.onrender.com/createadmin", {
             email: register.email,
             password: register.password,
             phone: register.phone,

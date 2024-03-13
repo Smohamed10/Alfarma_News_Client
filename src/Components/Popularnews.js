@@ -11,7 +11,7 @@ const PopularNews = () => {
 
     useEffect(() => {
         setPopularnews({ loading: true, results: [], err: null, reload: "0" }); // Set loading state
-        axios.get("http://localhost:4004/last5")
+        axios.get("https://alfarma-news-server.onrender.com/last5")
             .then((resp) => {            
                 setPopularnews({ loading: false, results: resp.data, err: null, reload: "0" }); // Update state with fetched data
             })

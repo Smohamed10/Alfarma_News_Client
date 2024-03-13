@@ -35,7 +35,7 @@ const Postad = () => {
             const imageUrl = await uploadImage(); // Wait for image upload to complete
 
             if (imageUrl) {
-                const response = await axios.post("http://localhost:4004/createads", {
+                const response = await axios.post("https://alfarma-news-server.onrender.com/createads", {
                     ads_img: imageUrl,
                     name: Post.name,
                     description: Post.description,

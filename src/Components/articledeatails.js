@@ -17,7 +17,7 @@ const ArticleDetails = () => {
     useEffect(() => {
         setNews((prevState) => ({ ...prevState, loading: true }));
         axios
-            .get(`http://localhost:4004/getpost/${id}`)
+            .get(`https://alfarma-news-server.onrender.com/getpost/${id}`)
             .then((resp) => {
                 setNews((prevState) => ({
                     ...prevState,
@@ -49,7 +49,7 @@ const ArticleDetails = () => {
         e.preventDefault();
         try {
             // Send comment data to backend using axios post method
-            await axios.post('http://localhost:4004/createcomment', {
+            await axios.post('https://alfarma-news-server.onrender.com/createcomment', {
                 postID: postData.id,
                 name: formData.name,
                 email: formData.email,

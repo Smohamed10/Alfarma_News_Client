@@ -16,7 +16,7 @@ const Comment = (props) => {
 
         setComment((prevState) => ({ ...prevState, loading: true }));
 
-        axios.get("http://localhost:4004/getcomment",{
+        axios.get("https://alfarma-news-server.onrender.com/getcomment",{
             params: {
                 postid: postId // Pass selected option as query parameter
             }

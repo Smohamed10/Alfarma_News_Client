@@ -12,7 +12,7 @@ const Ad = (props) => {
   
     useEffect(() => {
       setads((prevState) => ({ ...prevState, loading: true }));
-      axios.get("http://localhost:4004/getallads", {
+      axios.get("https://alfarma-news-server.onrender.com/getallads", {
         params: {
             catname: props.category // Pass selected option as query parameter
         }

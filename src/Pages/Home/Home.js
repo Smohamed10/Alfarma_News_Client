@@ -19,7 +19,7 @@ const Home = () => {
         const fetchNews = async () => {
             try {
                 const promises = categories.map(category =>
-                    axios.get("http://localhost:4004/lastbycat", {
+                    axios.get("https://alfarma-news-server.onrender.com/lastbycat", {
                         params: {
                             catname: category
                         }

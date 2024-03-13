@@ -35,7 +35,7 @@ const CreatePost = () => {
             const imageUrl = await uploadImage(); // Wait for image upload to complete
 
             if (imageUrl) {
-                const response = await axios.post("http://localhost:4004/creatnews/", {
+                const response = await axios.post("https://alfarma-news-server.onrender.com/creatnews/", {
                     pic_path: imageUrl,
                     name: Post.name,
                     writer_name: Auth[0].name,
