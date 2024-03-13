@@ -10,7 +10,6 @@ const Leftnews = (props) => {
     return (
 <div className="blog-list clearfix " >  
       {props.news.map((item, index) => (
-
 <>
 <div className="section-title"key={index}>
                 <h3 className="color-red"><a href={`/Articledeatails/${item.id}`} title="">{item.category}</a></h3>
