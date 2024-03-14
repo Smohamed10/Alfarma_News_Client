@@ -3989,7 +3989,7 @@ tbody.collapse.show {
   border: 1px solid transparent;
   border-radius: 0.25rem;
   position: relative;
-  padding-left: 11rem;
+  margin-left: 11rem;
 }
 
 .navbar-toggler:focus, .navbar-toggler:hover {

@@ -1998,7 +1998,7 @@ hr.invis3 {
   &:before {
     content:"";
     position: absolute;
-    display: block;
+    display: contents;
     width: 0px;
     height: 0px;
     top: 0;
