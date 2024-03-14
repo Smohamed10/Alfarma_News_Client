@@ -65,26 +65,36 @@ const Home = () => {
 
     return (
         <div>
-            <PopularNews />
-            <section className="section">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-9">
-                            {leftNewsItems}
-                        </div>
-                        <div className="col-lg-3">
-                            {rightNewsItems}
-                        </div>
-                    </div>
-                </div>
-            </section>  
+{news.loading ? (
+    <div className="loading-spinner-overlay">
+        <div className="loading-spinner-container">
+            <div className="loading-spinner"></div>
+        </div>
+    </div>
+) : (
+    <div>
+    <PopularNews />
+    <section className="section">
+        <div className="container">
             <div className="row">
-        <div className="col-lg-10 offset-lg-1">
-                <div className="banner-img">       
-                <Ad category="الرئيسية" />
-            </div>
-                    </div>
+                <div className="col-lg-9">
+                    {leftNewsItems}
                 </div>
+                <div className="col-lg-3">
+                    {rightNewsItems}
+                </div>
+            </div>
+        </div>
+    </section>  
+    <div className="row" style={{maxWidth:'100%'}}>
+<div className="col-lg-10 offset-lg-1">
+        <div className="banner-img">       
+        <Ad category="الرئيسية" />
+    </div>
+            </div>
+        </div>
+        </div>)}
+
         </div>            
     );
 };

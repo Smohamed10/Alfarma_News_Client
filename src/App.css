@@ -185,7 +185,7 @@ a {
 
 @media (max-width: 768px) {
   .logo img {
-    width: 330px; /* Adjust the width for smaller screens */
+    width: 360px; /* Adjust the width for smaller screens */
   }
 }
 
