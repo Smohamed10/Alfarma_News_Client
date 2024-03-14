@@ -82,19 +82,22 @@ const Header = () => {
         <div>
       <Navbar bg="light" expand="lg">
       {Auth && <Nav.Link onClick={Logout} className='btn btn-sm btn-danger mx-2 nav-link fixed-top' style={{ right: '80%',borderRadius: '100rem',marginRight: '-2.5rem'}}>تسجيل الخروج</Nav.Link>}
-
+      <Navbar.Brand as={Link} to="/" className="logo">
+            <span className="Ankh"></span><img src={logo_vid} alt='logo'/>
+          </Navbar.Brand>
         <Container>
 
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle style={{alignSelf:'center'}} aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
-
+{/*
             <CustomNavDropdown title="المزيد" id="collapsible-nav-dropdown">
             <NavDropdown.Item href="#action/3.1">الموقع الاول</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">الموقع الثاني </NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.1">الموقع الثالث</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">الموقع الرابع </NavDropdown.Item>
             </CustomNavDropdown>
+            */}
             <Nav.Link as={Link} to="/Technology">تكنولوجيا</Nav.Link>
             <Nav.Link as={Link} to="/World">عالم</Nav.Link>
             <Nav.Link as={Link} to="/Accident">حوادث</Nav.Link>
@@ -117,9 +120,6 @@ const Header = () => {
 
             </Nav>
           </Navbar.Collapse>
-          <Navbar.Brand as={Link} to="/" className="logo">
-            <span className="Ankh"></span><img src={logo_vid} alt='logo'/>
-          </Navbar.Brand>
         </Container>
       </Navbar>
     </div>

@@ -3926,11 +3926,13 @@ tbody.collapse.show {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-flex-direction: row-reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+    width: 100%;
+    height: 100%;
   padding: 0.5rem 1rem;
   background: url(../images/header_bg_v2.jpg) repeat-x center  #ffffff;
 
@@ -3954,7 +3956,7 @@ tbody.collapse.show {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: inline-flex;
+  display: ruby;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -3986,6 +3988,8 @@ tbody.collapse.show {
   background: transparent;
   border: 1px solid transparent;
   border-radius: 0.25rem;
+  position: relative;
+  padding-left: 11rem;
 }
 
 .navbar-toggler:focus, .navbar-toggler:hover {
