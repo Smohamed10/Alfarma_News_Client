@@ -179,8 +179,14 @@ a {
 }
 
 .logo img {
-  width: 150px; /* Adjust the width as needed */
+  width: 150px; /* Default width for larger screens */
   height: auto;
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    width: 330px; /* Adjust the width for smaller screens */
+  }
 }
 
 .navbar-nav {
