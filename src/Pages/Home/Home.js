@@ -25,7 +25,7 @@ const Home = () => {
                         }
                     })
                 );
-
+    
                 const responses = await Promise.all(promises);
                 const fetchedNews = responses.map(response => response.data);
                 setNews({
@@ -43,13 +43,16 @@ const Home = () => {
                 });
             }
         };
-
-        if (news.loading) {
-            fetchNews();
-        }
-    }, [news.loading]);
-
-    console.log(news.results);
+    
+        // Set loading to true initially
+        setNews(prevState => ({
+            ...prevState,
+            loading: true
+        }));
+    
+        fetchNews();
+    }, []);
+    
 
     // Define separate arrays for news items mapped to left and right sides
     const leftNewsItems = [];
