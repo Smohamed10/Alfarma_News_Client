@@ -1,5 +1,5 @@
 import React from 'react';
-import footer_logo from"../images/footer_logo.png"
+import footer_logo from"../images/headerlogofinal.png"
 import Recentposts from '../Components/Recentposts';
 import Popularfooter from '../Components/Popularfooter';
 const Footer = () => {
