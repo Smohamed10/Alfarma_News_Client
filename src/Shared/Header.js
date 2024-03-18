@@ -86,17 +86,24 @@ const Header = () => {
                             <Navbar.Toggle style={{ alignSelf: 'center' }} aria-controls="basic-navbar-nav" />
                             <Navbar.Collapse id="basic-navbar-nav">
                                 <Nav className="me-auto">
-                                    <Nav.Link as={Link} to="/Technology">تكنولوجيا</Nav.Link>
-                                    <Nav.Link as={Link} to="/World">عالم</Nav.Link>
-                                    <Nav.Link as={Link} to="/Accident">حوادث</Nav.Link>
-                                    <Nav.Link as={Link} to="/Governorate">محافظات</Nav.Link>
-                                    <Nav.Link as={Link} to="/Economy">اقتصاد</Nav.Link>
-                                    <Nav.Link as={Link} to="/Petrol">بترول</Nav.Link>
-                                    <Nav.Link as={Link} to="/Sports">رياضة</Nav.Link>
-                                    <Nav.Link as={Link} to="/Art">فن</Nav.Link>
-                                    <Nav.Link as={Link} to="/Education">تعليم</Nav.Link>
-                                    <Nav.Link as={Link} to="/Health">صحة</Nav.Link>
-                                    <Nav.Link as={Link} to="/">الرئيسية</Nav.Link>
+                                <Nav.Link as={Link} to="/Abrag">أبراج</Nav.Link>
+                                <Nav.Link as={Link} to="/Articles">مقالات</Nav.Link>
+                                <Nav.Link as={Link} to="/Arab">عرب</Nav.Link>
+                                <Nav.Link as={Link} to="/Invistigations">تحقيقات</Nav.Link>
+                                <Nav.Link as={Link} to="/Television">تليفزيون</Nav.Link>
+                                <Nav.Link as={Link} to="/Taqreer">تقارير</Nav.Link>
+                                <Nav.Link as={Link} to="/Petrol">بترول</Nav.Link>
+                                <Nav.Link as={Link} to="/Sports">رياضة</Nav.Link>
+                                <Nav.Link as={Link} to="/Art">فن</Nav.Link>
+                                <Nav.Link as={Link} to="/Education">تعليم</Nav.Link>
+                                <Nav.Link as={Link} to="/Health">صحة</Nav.Link>
+                                <Nav.Link as={Link} to="/">الرئيسية</Nav.Link>
+                                <Nav.Link as={Link} to="/Politcs">سياسة</Nav.Link>
+                                <Nav.Link as={Link} to="/Technology">تكنولوجيا</Nav.Link>
+                                <Nav.Link as={Link} to="/World">عالم</Nav.Link>
+                                <Nav.Link as={Link} to="/Accident">حوادث</Nav.Link>
+                                <Nav.Link as={Link} to="/Governorate">محافظات</Nav.Link>
+                                <Nav.Link as={Link} to="/Economy">اقتصاد</Nav.Link>
                                 </Nav>
                             </Navbar.Collapse>
                         </Container>

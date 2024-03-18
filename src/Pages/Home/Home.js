@@ -5,7 +5,7 @@ import Rightnews from '../../Components/Rightnews';
 import Leftnews from '../../Components/Leftnews';
 import Ad from '../../Components/Ad';
 
-const categories = ["رياضة", "فن", "تكنولوجيا", "اقتصاد", "بترول", "عالم", "صحة", "محافظات", "تعليم", "حوادث"];
+const categories = ["رياضة", "فن", "تكنولوجيا", "اقتصاد", "بترول", "عالم", "صحة", "محافظات", "تعليم", "حوادث","أبراج","مقالات","عرب","تحقيقات","تليفزيون","تقارير","سياسة"];
 
 const Home = () => {
     const [news, setNews] = useState({

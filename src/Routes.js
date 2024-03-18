@@ -17,6 +17,13 @@ import Technology from "./Pages/Technology/Technology";
 import World from "./Pages/World/World";
 import Contact from "./Pages/Contact/Contact";
 import Postad from "./Pages/Admin/Postad";
+import Invistigations from "./Pages/Invistigations/Invistigations";
+import Articles from "./Pages/Articles/Articles";
+import Arab from "./Pages/Arab/Arab";
+import Abrag from "./Pages/Abrag/Abrag";
+import Television from "./Pages/Television/Television";
+import Taqreer from "./Pages/Taqreer/Taqreer";
+import Politics from "./Pages/Politics/Politics";
 
 export const routes = createBrowserRouter([
     {
@@ -92,6 +99,34 @@ export const routes = createBrowserRouter([
             {
                 path: "/World",
                 element: <World/>,
+            },
+            {
+                path: "/Invistigations",
+                element: <Invistigations/>,
+            },
+            {
+                path: "/Articles",
+                element: <Articles/>,
+            },
+            {
+                path: "/Arab",
+                element: <Arab/>,
+            },
+            {
+                path: "/Abrag",
+                element: <Abrag/>,
+            },
+            {
+                path: "/Television",
+                element: <Television/>,
+            },
+            {
+                path: "/Taqreer",
+                element: <Taqreer/>,
+            },
+            {
+                path: "/Politcs",
+                element: <Politics/>,
             },
 
         ]

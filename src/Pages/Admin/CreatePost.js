@@ -131,6 +131,14 @@ const CreatePost = () => {
                                                 <Dropdown.Item onClick={() => setSelectedCategory("حوادث")}>حوادث</Dropdown.Item>
                                                 <Dropdown.Item onClick={() => setSelectedCategory("عالم")}>عالم</Dropdown.Item>
                                                 <Dropdown.Item onClick={() => setSelectedCategory("تكنولوجيا")}>تكنولوجيا</Dropdown.Item>
+                                                <Dropdown.Item onClick={() => setSelectedCategory("أبراج")}>أبراج</Dropdown.Item>
+                                                <Dropdown.Item onClick={() => setSelectedCategory("مقالات")}>مقالات</Dropdown.Item>
+                                                <Dropdown.Item onClick={() => setSelectedCategory("عرب")}>عرب</Dropdown.Item>
+                                                <Dropdown.Item onClick={() => setSelectedCategory("تحقيقات")}>تحقيقات</Dropdown.Item>
+                                                <Dropdown.Item onClick={() => setSelectedCategory("تليفزيون")}>تليفزيون</Dropdown.Item>
+                                                <Dropdown.Item onClick={() => setSelectedCategory("تقارير")}>تقارير</Dropdown.Item>
+                                                <Dropdown.Item onClick={() => setSelectedCategory("سياسة")}>سياسة</Dropdown.Item>
+
                                             </Dropdown.Menu>
                                         </Dropdown>
                                     </div>
