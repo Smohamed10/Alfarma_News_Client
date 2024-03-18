@@ -185,14 +185,15 @@ a {
 
 @media (max-width: 768px) {
   .logo img {
-    width: 360px; /* Adjust the width for smaller screens */
-    margin-left: 3rem;
-
+    width: 150px; /* Adjust the width for smaller screens */
+    height: 150px; /* Set the height to match the width */
+    margin-right: 5.5rem;
   }
-  .topbar-section{
+  .topbar-section {
     display: none;
   }
 }
+
 
 .navbar-nav {
   margin: 0;
